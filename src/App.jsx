@@ -1,7 +1,7 @@
 function App() {
   return (
     <div>
-      App
+      <a href="">This is a link</a>
     </div>
   )
 }

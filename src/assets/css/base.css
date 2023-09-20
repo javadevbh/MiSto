@@ -1,0 +1,48 @@
+@layer base {
+  html {
+    @apply font-spartan font-normal text-primary-black;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold uppercase;
+  }
+  h1 {
+    @apply text-4xl leading-[42px] tracking-[2.16px];
+  }
+  h2 {
+    @apply text-[26px] leading-[36px] tracking-[1.56px];
+  }
+  h3 {
+    @apply text-[22px] leading-[30px] tracking-[1.32px];
+  }
+  h4 {
+    @apply text-base tracking-[0.96px];
+  }
+  h5 {
+    @apply text-sm leading-[22px] tracking-[0.84px];
+  }
+  h6 {
+    @apply text-xs leading-[18px] tracking-[0.72px];
+  }
+  p {
+    @apply font-normal text-sm leading-[22px];
+  }
+  small {
+    @apply font-medium text-[11px] leading-[18px];
+  }
+  button {
+    @apply text-[13px] font-medium leading-[normal] tracking-[0.78px] uppercase;
+  }
+  a {
+    @apply text-xs leading-[34px] font-normal opacity-[0.8] hover:underline hover:opacity-100
+  }
+  input,
+  select,
+  textarea {
+    @apply outline-none bg-transparent;
+  }
+}
