@@ -1,6 +1,6 @@
 @layer base {
   html {
-    @apply font-spartan font-normal text-primary-black;
+    @apply font-spartan text-sm font-normal text-primary-black;
   }
   h1,
   h2,
@@ -36,9 +36,6 @@
   }
   button {
     @apply text-[13px] font-medium leading-[normal] tracking-[0.78px] uppercase;
-  }
-  a {
-    @apply text-xs leading-[34px] font-normal opacity-[0.8] hover:underline hover:opacity-100
   }
   input,
   select,

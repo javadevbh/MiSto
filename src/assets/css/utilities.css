@@ -1,0 +1,8 @@
+@layer utilities {
+    .px-content {
+        @apply xl:px-[85px] lg:px-16 md:px-12 sm:px-10 px-5;
+    }
+    .flex-balance {
+        @apply flex items-center
+    }
+}

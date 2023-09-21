@@ -1,9 +1,12 @@
+//Components
+import Header from "./components/shared/Header";
+
 function App() {
   return (
-    <div>
-      <a href="">This is a link</a>
-    </div>
-  )
+    <>
+      <Header />
+    </>
+  );
 }
 
-export default App
+export default App;
