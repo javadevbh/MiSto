@@ -5,6 +5,12 @@
   .link-sm {
     @apply text-xs leading-[34px] font-normal opacity-80 hover:underline hover:opacity-100 transition-all duration-300;
   }
+  .link-md {
+    @apply text-[13px] font-normal leading-[34px] opacity-80 hover:opacity-100 transition-all duration-300;
+  }
+  .arrow-hover {
+    @apply p-2 bg-primary-gray rounded-full cursor-pointer
+  }
   .hidden-element {
     opacity: 0;
     visibility: hidden;
