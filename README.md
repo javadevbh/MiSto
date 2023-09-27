@@ -1,4 +1,4 @@
-# MiSto clothing store
+# MiSto clothing store ( Work in progress )
 A complete clothing store site
 ## [review online](https://javadbahrami-misto.netlify.app/)
 ---
