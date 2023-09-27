@@ -3,10 +3,10 @@
     @apply hover:scale-105 transition-transform active:scale-100;
   }
   .btn-md {
-    @apply px-8 py-4;
+    @apply px-5 py-3;
   }
   .btn-lg {
-    @apply px-5 py-3;
+    @apply px-8 py-4;
   }
   .btn-gray {
     @apply text-primary-black bg-primary-lightGray hover:bg-primary-gray transition-all

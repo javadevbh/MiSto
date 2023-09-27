@@ -2,14 +2,26 @@
   .icon-sm {
     @apply w-[14px];
   }
+  .icon-lg {
+    @apply w-6;
+  }
+  .icon-xl {
+    @apply w-10 opacity-60 hover:opacity-100 transition-all duration-300;
+  }
   .link-sm {
     @apply text-xs leading-[34px] font-normal opacity-80 hover:underline hover:opacity-100 transition-all duration-300;
   }
   .link-md {
     @apply text-[13px] font-normal leading-[34px] opacity-80 hover:opacity-100 transition-all duration-300;
   }
+  .link-hover {
+    @apply hover:font-bold transition-all;
+  }
   .arrow-hover {
-    @apply p-2 bg-primary-gray rounded-full cursor-pointer
+    @apply p-2 bg-primary-gray rounded-full cursor-pointer;
+  }
+  .img-sm{
+    @apply w-[72px] h-[90px];
   }
   .hidden-element {
     opacity: 0;
@@ -20,5 +32,16 @@
     opacity: 1;
     visibility: visible;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-  }  
+  }
+  .apply-opaque {
+    background-color: rgba(0,0,0,0.1) !important;
+    transition: all 400ms !important
+  }
+  .drawer-transition {
+    @apply transition-all ease-in-out duration-[400ms];
+  }
+  .open-drawer {
+    @apply !right-0;
+  }
+
 }

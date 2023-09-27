@@ -1,0 +1,9 @@
+@layer components {
+    .drawer-deck {
+        @apply fixed top-0 -right-[1000px] w-[80%] sm:w-2/4 md:w-2/5 lg:w-96 h-screen bg-white z-[60] drawer-transition;
+    }
+
+    .drawer-header {
+        @apply bg-primary-black flex-balance justify-between text-white px-6 py-3;
+    }
+}

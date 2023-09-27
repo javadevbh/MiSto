@@ -3,3 +3,5 @@
 @import "./components/btn.css";
 @import "./utilities.css";
 @import "components/global.css";
+@import "components/layout.css";
+@import "./components/input.css";

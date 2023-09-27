@@ -1,0 +1,19 @@
+@layer components {
+    .input {
+        @apply w-full outline-none
+    }
+    .input-md {
+        @apply bg-primary-lightGray p-4;
+    }
+    .input-lg {
+        @apply bg-[rgba(0,0,0,0.8)] px-4 py-3 text-white
+    }
+    .hidden-appearance {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    .input-label {
+        @apply text-sm leading-[22px] tracking-[0.84px] uppercase font-semibold;
+    }
+}

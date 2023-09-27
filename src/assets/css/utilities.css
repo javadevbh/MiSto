@@ -5,4 +5,10 @@
     .flex-balance {
         @apply flex items-center
     }
+    .icon-cursor {
+        @apply cursor-pointer
+    }
+    .border-b-gray {
+        @apply border-b-2 border-primary-gray
+    }
 }

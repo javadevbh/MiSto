@@ -37,9 +37,7 @@
   button {
     @apply text-[13px] font-medium leading-[normal] tracking-[0.78px] uppercase;
   }
-  input,
-  select,
-  textarea {
-    @apply outline-none bg-transparent;
+  input[type=radio]{
+    @apply w-[18px] h-[18px] appearance-none border border-primary-black rounded-full relative before:w-[8px] before:h-[8px] before:rounded-full before:absolute before:hidden before:bg-primary-black before:left-[4.1px] before:top-[4.1px] checked:before:block;
   }
 }
