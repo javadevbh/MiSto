@@ -2,6 +2,9 @@
   .icon-sm {
     @apply w-[14px];
   }
+  .icon-md {
+    @apply w-[18px]
+  }
   .icon-lg {
     @apply w-6;
   }

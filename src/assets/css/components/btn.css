@@ -2,6 +2,9 @@
   .btn {
     @apply hover:scale-105 transition-transform active:scale-100;
   }
+  .btn-sm {
+    @apply py-[6px] px-6
+  }
   .btn-md {
     @apply px-5 py-3;
   }
@@ -13,5 +16,8 @@
   }
   .btn-black {
     @apply text-white bg-primary-black hover:opacity-80 transition-all
+  }
+  .btn-blur {
+    @apply bg-transparent border border-white
   }
 }

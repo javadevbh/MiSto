@@ -6,7 +6,7 @@
         @apply bg-primary-lightGray p-4;
     }
     .input-lg {
-        @apply bg-[rgba(0,0,0,0.8)] px-4 py-3 text-white
+        @apply bg-[rgba(255,255,255,0.2)] px-4 py-2 text-white
     }
     .hidden-appearance {
         appearance: none;

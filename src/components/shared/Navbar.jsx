@@ -906,7 +906,7 @@ const Navbar = () => {
                 className="input input-md"
                 placeholder="Enter your email"
                 id="login-email"
-                type="text"
+                type="email"
               />
             </div>
             <div className="grid gap-2">
@@ -989,7 +989,7 @@ const Navbar = () => {
                 className="input input-md"
                 placeholder="Enter your email"
                 id="signup-email"
-                type="text"
+                type="email"
               />
             </div>
             <div className="grid gap-2">
@@ -1056,7 +1056,7 @@ const Navbar = () => {
               <div className="flex flex-col justify-between w-full">
                 <div className="flex flex-col space-y-1">
                   <p className="opacity-60">Women's tracksuit Q109</p>
-                  <p className="font-bold">$379.99</p>
+                  <h6 className="normal-case">Blue, S</h6>
                 </div>
                 <div className="flex-balance justify-between w-full">
                   <div className="flex-balance w-20 justify-between bg-primary-lightGray p-1">
@@ -1074,7 +1074,7 @@ const Navbar = () => {
               <div className="flex flex-col justify-between w-full">
                 <div className="flex flex-col space-y-1">
                   <p className="opacity-60">Women's tracksuit Q109</p>
-                  <p className="font-bold">$379.99</p>
+                  <h6 className="normal-case">Blue, S</h6>
                 </div>
                 <div className="flex-balance justify-between w-full">
                   <div className="flex-balance w-20 justify-between bg-primary-lightGray p-1">
@@ -1092,7 +1092,7 @@ const Navbar = () => {
               <div className="flex flex-col justify-between w-full">
                 <div className="flex flex-col space-y-1">
                   <p className="opacity-60">Women's tracksuit Q109</p>
-                  <p className="font-bold">$379.99</p>
+                  <h6 className="normal-case">Blue, S</h6>
                 </div>
                 <div className="flex-balance justify-between w-full">
                   <div className="flex-balance w-20 justify-between bg-primary-lightGray p-1">
@@ -1110,7 +1110,7 @@ const Navbar = () => {
               <div className="flex flex-col justify-between w-full">
                 <div className="flex flex-col space-y-1">
                   <p className="opacity-60">Women's tracksuit Q109</p>
-                  <p className="font-bold">$379.99</p>
+                  <h6 className="normal-case">Blue, S</h6>
                 </div>
                 <div className="flex-balance justify-between w-full">
                   <div className="flex-balance w-20 justify-between bg-primary-lightGray p-1">
@@ -1128,7 +1128,7 @@ const Navbar = () => {
               <div className="flex flex-col justify-between w-full">
                 <div className="flex flex-col space-y-1">
                   <p className="opacity-60">Women's tracksuit Q109</p>
-                  <p className="font-bold">$379.99</p>
+                  <h6 className="normal-case">Blue, S</h6>
                 </div>
                 <div className="flex-balance justify-between w-full">
                   <div className="flex-balance w-20 justify-between bg-primary-lightGray p-1">
@@ -1146,7 +1146,7 @@ const Navbar = () => {
               <div className="flex flex-col justify-between w-full">
                 <div className="flex flex-col space-y-1">
                   <p className="opacity-60">Women's tracksuit Q109</p>
-                  <p className="font-bold">$379.99</p>
+                  <h6 className="normal-case">Blue, S</h6>
                 </div>
                 <div className="flex-balance justify-between w-full">
                   <div className="flex-balance w-20 justify-between bg-primary-lightGray p-1">
