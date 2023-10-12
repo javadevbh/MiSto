@@ -2,6 +2,9 @@
     .px-content {
         @apply xl:px-[85px] lg:px-16 md:px-12 sm:px-10 px-5;
     }
+    .mt-content {
+        @apply mt-[100px]
+    }
     .flex-balance {
         @apply flex items-center
     }
@@ -10,5 +13,8 @@
     }
     .border-b-gray {
         @apply border-b-2 border-primary-gray
+    }
+    .border-b-lightgray {
+        @apply border-b-2 border-primary-lightGray
     }
 }

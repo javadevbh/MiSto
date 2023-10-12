@@ -17,6 +17,16 @@ export default {
           error : '#D61313',
           succuss : '#0BB17F'
         }
+      },
+      backgroundImage : {
+        'bannerbg1' : "url('/src/assets/images/banner bg/bannerbg1.jpg')",
+        'bannerbg1-h' : "url('/src/assets/images/banner bg/bannerbg1v2.png')",
+        'bannerbg2' : "url('/src/assets/images/banner bg/bannerbg2.jpg')",
+        'bannerbg2-h' : "url('/src/assets/images/banner bg/bannerbg2v2.png')",
+        'bannerbg3' : "url('/src/assets/images/banner bg/bannerbg3.jpg')",
+        'bannerbg3-h' : "url('/src/assets/images/banner bg/bannerbg3v2.png')",
+        'bannerbg4' : "url('/src/assets/images/banner bg/bannerbg4.jpg')",
+        'bannerbg4-h' : "url('/src/assets/images/banner bg/bannerbg4v2.png')",
       }
     },
   },

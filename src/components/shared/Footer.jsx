@@ -21,7 +21,7 @@ import brand7 from "../../assets/images/brands logo/american-express_x42.jpg";
 
 const Footer = () => {
   return (
-    <footer className="mt-32">
+    <footer>
       <div className="px-content py-3 bg-primary-black text-white md:flex-balance md:flex-row md:space-y-0 md:justify-between flex space-y-2 flex-col items-center">
         <h6>Be in touch with us:</h6>
         <div className="flex-balance space-x-3">
@@ -97,14 +97,14 @@ const Footer = () => {
         <div className="lg:order-1 order-3 sm:m-0 mx-auto">
             <small className="leading-[22px] opacity-80">Copyright © 2023 all rights reserved</small>
         </div>
-        <div className="flex-balance space-x-3 flex-wrap sm:gap-0 gap-3 lg:order-2 order-2">
+        <div className="flex-balance space-x-3 flex-wrap sm:gap-0 gap-3 lg:order-2 order-2 mx-auto sm:mx-0">
             <img src={brand1} alt="brand1" />
             <img src={brand2} alt="brand2" />
             <img src={brand3} alt="brand3" />
             <img src={brand4} alt="brand4" />
             <img src={brand5} alt="brand5" />
-            <img src={brand6} alt="brand6" />
-            <img src={brand7} alt="brand7" />
+            <img className="hidden sm:block" src={brand6} alt="brand6" />
+            <img className="hidden sm:block" src={brand7} alt="brand7" />
         </div>
         <div className="sm:flex-balance sm:space-x-3 grid lg:order-3 order-1 sm:m-0 mx-auto">
             <a className="link-sm" href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.behance.net%2Fshamandesign">Designed by <b>Oleh Chabanov</b></a>
