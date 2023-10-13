@@ -697,13 +697,13 @@ const MainPage = () => {
         </a>
       </section>
       <section className="px-content pb-section sm:flex-row sm:items-center sm:space-y-0 sm:space-x-8 flex flex-col space-y-8 items-center">
-        <div className="bg-sectionImage2 bg-top flex-balance justify-center sm:w-1/2 w-full h-60">
+        <div className="bg-sectionImage2 bg-no-repeat bg-top flex-balance justify-center sm:w-1/2 w-full h-60">
           <div className="bg-white rounded-md px-6 py-4 text-center">
             <h6 className="leading-normal opacity-60 mb-2">New Season</h6>
             <h4>lookbook collection</h4>
           </div>
         </div>
-        <div className="bg-sectionImage1 bg-top flex-balance justify-center sm:w-1/2 w-full h-60">
+        <div className="bg-sectionImage1 bg-no-repeat bg-top flex-balance justify-center sm:w-1/2 w-full h-60">
           <div className="bg-white rounded-md px-6 py-4 text-center">
             <h6 className="leading-normal opacity-60 mb-2">Sale</h6>
             <h4>Get UP to <span className="text-base font-semibold tracking-[0.96px] uppercase text-primary-pink">50% off</span></h4>
