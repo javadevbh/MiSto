@@ -6,4 +6,12 @@
     .drawer-header {
         @apply bg-primary-black flex-balance justify-between text-white px-6 py-3;
     }
+
+    .cards-deck {
+        @apply py-12 flex flex-wrap sm:justify-between justify-center gap-6;
+    }
+
+    .card-deck {
+        @apply grid gap-3
+    }
 }

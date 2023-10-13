@@ -11,6 +11,11 @@ import "swiper/css/pagination";
 import truckIcon from "../assets/icons/truck 1.svg";
 import refreshIcon from "../assets/icons/refresh 1.svg";
 import supportIcon from "../assets/icons/support 1.svg";
+import leftArrow from "../assets/icons/chevron-left 1.svg";
+import yellowStar from "../assets/icons/star 1.svg";
+import grayStar from "../assets/icons/star 2.svg";
+import productImage1 from "../assets/images/Rectangle 3.jpg";
+import productImage2 from "../assets/images/Rectangle 2.jpg";
 
 const MainPage = () => {
   return (
@@ -116,7 +121,9 @@ const MainPage = () => {
                     className="bg-white sm:py-6 sm:px-8 py-4 px-6 rounded-md text-center"
                   >
                     <h6 className="leading-normal opacity-40 mb-2">Banner</h6>
-                    <h3 className="leading-normal sm:text-[22px] text-sm">Your title text</h3>
+                    <h3 className="leading-normal sm:text-[22px] text-sm">
+                      Your title text
+                    </h3>
                   </a>
                 </SwiperSlide>
                 <SwiperSlide className="bg-bannerbg2-h lg:bg-bannerbg2 flex-balance justify-center bg-no-repeat bg-top">
@@ -190,6 +197,496 @@ const MainPage = () => {
             </div>
           </div>
         </div>
+      </section>
+      <section className="px-content pt-section">
+        <div className="flex-balance justify-between">
+          <h3 className="leading-normal">women's</h3>
+          <ul className="hidden lg:flex-balance lg:space-x-8">
+            <li>
+              <h6 className="font-medium leading-normal cursor-pointer">
+                New Arrivals
+              </h6>
+            </li>
+            <li>
+              <h6 className="font-normal leading-normal opacity-60 cursor-pointer">
+                Specials
+              </h6>
+            </li>
+            <li>
+              <h6 className="font-normal leading-normal opacity-60 cursor-pointer">
+                Bestsellers
+              </h6>
+            </li>
+            <li>
+              <h6 className="font-normal leading-normal opacity-60 cursor-pointer">
+                Most Viewed
+              </h6>
+            </li>
+            <li>
+              <h6 className="font-normal leading-normal opacity-60 cursor-pointer">
+                Featured Products
+              </h6>
+            </li>
+          </ul>
+          <div className="relative inline-block lg:hidden">
+            <select className="input input-md hidden-appearance ">
+              <option value="all-categories">New Arrivals</option>
+              <option value="all-categories">Specials</option>
+              <option value="all-categories">Bestsellers</option>
+              <option value="all-categories">Most Viewed</option>
+              <option value="all-categories">Featured Products</option>
+            </select>
+            <img
+              className="-rotate-90 absolute top-4 right-3 w-6 pointer-events-none"
+              src={leftArrow}
+              alt="leftArrow"
+            />
+          </div>
+        </div>
+        <div className="cards-deck">
+          <div className="card-deck">
+            <a className="sale-50" href="#">
+              <img className="w-64" src={productImage1} alt="productImage1" />
+            </a>
+            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
+            <div className="flex-balance justify-between">
+              <div className="flex-balance space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through">
+                  $ 60.00
+                </p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+          </div>
+          <div className="card-deck">
+            <a href="#">
+              <img className="w-64" src={productImage1} alt="productImage1" />
+            </a>
+            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
+            <div className="flex-balance justify-between">
+              <div className="flex-balance space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through"></p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+          </div>
+          <div className="card-deck">
+            <a href="#">
+              <img className="w-64" src={productImage1} alt="productImage1" />
+            </a>
+            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
+            <div className="flex-balance justify-between">
+              <div className="flex-balance space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through"></p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+          </div>
+          <div className="card-deck">
+            <a href="#">
+              <img className="w-64" src={productImage1} alt="productImage1" />
+            </a>
+            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
+            <div className="flex-balance justify-between">
+              <div className="flex-balance space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through"></p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+          </div>
+          <div className="card-deck">
+            <a href="#">
+              <img className="w-64" src={productImage1} alt="productImage1" />
+            </a>
+            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
+            <div className="flex-balance justify-between">
+              <div className="flex-balance space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through"></p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+          </div>
+          <div className="card-deck">
+            <a className="sale-50" href="#">
+              <img className="w-64" src={productImage1} alt="productImage1" />
+            </a>
+            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
+            <div className="flex-balance justify-between">
+              <div className="flex-balance space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through">
+                  $ 60.00
+                </p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+          </div>
+          <div className="sm:card-deck hidden">
+            <a href="#">
+              <img className="w-64" src={productImage1} alt="productImage1" />
+            </a>
+            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
+            <div className="flex-balance justify-between">
+              <div className="flex-balance space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through"></p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+          </div>
+          <div className="sm:card-deck hidden">
+            <a href="#">
+              <img className="w-64" src={productImage1} alt="productImage1" />
+            </a>
+            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
+            <div className="flex-balance justify-between">
+              <div className="flex-balance space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through"></p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+          </div>
+          <div className="sm:card-deck hidden">
+            <a href="#">
+              <img className="w-64" src={productImage1} alt="productImage1" />
+            </a>
+            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
+            <div className="flex-balance justify-between">
+              <div className="flex-balance space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through"></p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+          </div>
+          <div className="sm:card-deck hidden">
+            <a href="#">
+              <img className="w-64" src={productImage1} alt="productImage1" />
+            </a>
+            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
+            <div className="flex-balance justify-between">
+              <div className="flex-balance space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through"></p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <a className="py-4 btn-gray btn w-full inline-block text-center" href="#">
+          <button className="opacity-80">See All</button>
+        </a>
+      </section>
+      <section className="px-content pt-section pb-section">
+        <div className="flex-balance justify-between">
+          <h3 className="leading-normal">Men's</h3>
+          <ul className="hidden lg:flex-balance lg:space-x-8">
+            <li>
+              <h6 className="font-medium leading-normal cursor-pointer">
+                New Arrivals
+              </h6>
+            </li>
+            <li>
+              <h6 className="font-normal leading-normal opacity-60 cursor-pointer">
+                Specials
+              </h6>
+            </li>
+            <li>
+              <h6 className="font-normal leading-normal opacity-60 cursor-pointer">
+                Bestsellers
+              </h6>
+            </li>
+            <li>
+              <h6 className="font-normal leading-normal opacity-60 cursor-pointer">
+                Most Viewed
+              </h6>
+            </li>
+            <li>
+              <h6 className="font-normal leading-normal opacity-60 cursor-pointer">
+                Featured Products
+              </h6>
+            </li>
+          </ul>
+          <div className="relative inline-block lg:hidden">
+            <select className="input input-md hidden-appearance ">
+              <option value="all-categories">New Arrivals</option>
+              <option value="all-categories">Specials</option>
+              <option value="all-categories">Bestsellers</option>
+              <option value="all-categories">Most Viewed</option>
+              <option value="all-categories">Featured Products</option>
+            </select>
+            <img
+              className="-rotate-90 absolute top-4 right-3 w-6 pointer-events-none"
+              src={leftArrow}
+              alt="leftArrow"
+            />
+          </div>
+        </div>
+        <div className="cards-deck">
+          <div className="card-deck">
+            <a className="sale-50" href="#">
+              <img className="w-64" src={productImage2} alt="productImage2" />
+            </a>
+            <p className="leading-normal opacity-60">Leather White Trainers</p>
+            <div className="flex-balance justify-between">
+              <div className="flex-balance space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through">
+                  $ 60.00
+                </p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+          </div>
+          <div className="card-deck">
+            <a href="#">
+              <img className="w-64" src={productImage2} alt="productImage2" />
+            </a>
+            <p className="leading-normal opacity-60">Leather White Trainers</p>
+            <div className="flex-balance justify-between">
+              <div className="flex-balance space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through"></p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+          </div>
+          <div className="card-deck">
+            <a href="#">
+              <img className="w-64" src={productImage2} alt="productImage2" />
+            </a>
+            <p className="leading-normal opacity-60">Leather White Trainers</p>
+            <div className="flex-balance justify-between">
+              <div className="flex-balance space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through"></p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+          </div>
+          <div className="card-deck">
+            <a href="#">
+              <img className="w-64" src={productImage2} alt="productImage2" />
+            </a>
+            <p className="leading-normal opacity-60">Leather White Trainers</p>
+            <div className="flex-balance justify-between">
+              <div className="flex-balance space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through"></p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+          </div>
+          <div className="card-deck">
+            <a href="#">
+              <img className="w-64" src={productImage2} alt="productImage2" />
+            </a>
+            <p className="leading-normal opacity-60">Leather White Trainers</p>
+            <div className="flex-balance justify-between">
+              <div className="flex-balance space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through"></p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+          </div>
+          <div className="card-deck">
+            <a className="sale-50" href="#">
+              <img className="w-64" src={productImage2} alt="productImage2" />
+            </a>
+            <p className="leading-normal opacity-60">Leather White Trainers</p>
+            <div className="flex-balance justify-between">
+              <div className="flex-balance space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through">
+                  $ 60.00
+                </p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+          </div>
+          <div className="sm:card-deck hidden">
+            <a href="#">
+              <img className="w-64" src={productImage2} alt="productImage2" />
+            </a>
+            <p className="leading-normal opacity-60">Leather White Trainers</p>
+            <div className="flex-balance justify-between">
+              <div className="flex-balance space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through"></p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+          </div>
+          <div className="sm:card-deck hidden">
+            <a href="#">
+              <img className="w-64" src={productImage2} alt="productImage2" />
+            </a>
+            <p className="leading-normal opacity-60">Leather White Trainers</p>
+            <div className="flex-balance justify-between">
+              <div className="flex-balance space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through"></p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+          </div>
+          <div className="sm:card-deck hidden">
+            <a href="#">
+              <img className="w-64" src={productImage2} alt="productImage2" />
+            </a>
+            <p className="leading-normal opacity-60">Leather White Trainers</p>
+            <div className="flex-balance justify-between">
+              <div className="flex-balance space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through"></p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+          </div>
+          <div className="sm:card-deck hidden">
+            <a href="#">
+              <img className="w-64" src={productImage2} alt="productImage2" />
+            </a>
+            <p className="leading-normal opacity-60">Leather White Trainers</p>
+            <div className="flex-balance justify-between">
+              <div className="flex-balance space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through"></p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <a className="py-4 btn-gray btn w-full inline-block text-center" href="#">
+          <button className="opacity-80">See All</button>
+        </a>
       </section>
     </main>
   );

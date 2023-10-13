@@ -2,6 +2,12 @@
     .px-content {
         @apply xl:px-[85px] lg:px-16 md:px-12 sm:px-10 px-5;
     }
+    .pt-section {
+        @apply pt-24;
+    }
+    .pb-section {
+        @apply pb-24;
+    }
     .mt-content {
         @apply mt-[100px]
     }
