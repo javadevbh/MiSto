@@ -18,6 +18,8 @@ import grayStar from "../assets/icons/star 2.svg";
 //Images
 import productImage1 from "../assets/images/Rectangle 3.jpg";
 import productImage2 from "../assets/images/Rectangle 2.jpg";
+import sectionImage3 from "../assets/images/section-image3.png"
+import sectionImage4 from "../assets/images/section-image4.png"
 
 const MainPage = () => {
   return (
@@ -708,6 +710,18 @@ const MainPage = () => {
             <h6 className="leading-normal opacity-60 mb-2">Sale</h6>
             <h4>Get UP to <span className="text-base font-semibold tracking-[0.96px] uppercase text-primary-pink">50% off</span></h4>
           </div>
+        </div>
+      </section>
+      <section className="pb-section">
+        <div className="px-content bg-secondary-gray h-[580px] flex-balance lg:-space-x-10 justify-center">
+          <img className="hidden lg:block z-20 mt-20" src={sectionImage4} alt="sectionImage4" />
+          <div className="bg-white rounded-[4px] px-10 py-20 lg:pb-32 lg:pt-24 lg:px-24 text-center z-10">
+            <h6 className="leading-normal opacity-40 mb-4">Special Offer</h6>
+            <h2 className="mb-8">Subscribe And <span className="text-[26px] leading-[36px] tracking-[1.56px] uppercase font-semibold text-primary-pink">Get 10% Off</span></h2>
+            <input className="input input-md text-center mb-6" placeholder="Enter your email" type="email"/>
+            <button className="btn btn-lg btn-black w-full opacity-90">Subscribe</button>
+          </div>
+          <img className="hidden lg:block z-20 mt-14" src={sectionImage3} alt="sectionImage3" />
         </div>
       </section>
     </main>

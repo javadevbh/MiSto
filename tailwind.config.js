@@ -16,6 +16,9 @@ export default {
           yellow : '#F0CC84',
           error : '#D61313',
           succuss : '#0BB17F'
+        },
+        secondary : {
+          gray : '#F3F2F2;',
         }
       },
       backgroundImage : {
