@@ -250,11 +250,11 @@ const MainPage = () => {
         <div className="cards-deck">
           <div className="card-deck">
             <a className="sale-50" href="#">
-              <img className="w-64" src={productImage1} alt="productImage1" />
+              <img className="sm:w-64 w-40" src={productImage1} alt="productImage1" />
             </a>
             <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
             <div className="flex-balance justify-between">
-              <div className="flex-balance space-x-1">
+              <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
                 <p className="text-xs font-bold opacity-40 line-through">
                   $ 60.00
@@ -271,11 +271,11 @@ const MainPage = () => {
           </div>
           <div className="card-deck">
             <a href="#">
-              <img className="w-64" src={productImage1} alt="productImage1" />
+              <img className="sm:w-64 w-40" src={productImage1} alt="productImage1" />
             </a>
             <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
             <div className="flex-balance justify-between">
-              <div className="flex-balance space-x-1">
+              <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
                 <p className="text-xs font-bold opacity-40 line-through"></p>
               </div>
@@ -290,11 +290,11 @@ const MainPage = () => {
           </div>
           <div className="card-deck">
             <a href="#">
-              <img className="w-64" src={productImage1} alt="productImage1" />
+              <img className="sm:w-64 w-40" src={productImage1} alt="productImage1" />
             </a>
             <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
             <div className="flex-balance justify-between">
-              <div className="flex-balance space-x-1">
+              <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
                 <p className="text-xs font-bold opacity-40 line-through"></p>
               </div>
@@ -309,11 +309,11 @@ const MainPage = () => {
           </div>
           <div className="card-deck">
             <a href="#">
-              <img className="w-64" src={productImage1} alt="productImage1" />
+              <img className="sm:w-64 w-40" src={productImage1} alt="productImage1" />
             </a>
             <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
             <div className="flex-balance justify-between">
-              <div className="flex-balance space-x-1">
+              <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
                 <p className="text-xs font-bold opacity-40 line-through"></p>
               </div>
@@ -328,11 +328,11 @@ const MainPage = () => {
           </div>
           <div className="card-deck">
             <a href="#">
-              <img className="w-64" src={productImage1} alt="productImage1" />
+              <img className="sm:w-64 w-40" src={productImage1} alt="productImage1" />
             </a>
             <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
             <div className="flex-balance justify-between">
-              <div className="flex-balance space-x-1">
+              <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
                 <p className="text-xs font-bold opacity-40 line-through"></p>
               </div>
@@ -347,11 +347,11 @@ const MainPage = () => {
           </div>
           <div className="card-deck">
             <a className="sale-50" href="#">
-              <img className="w-64" src={productImage1} alt="productImage1" />
+              <img className="sm:w-64 w-40" src={productImage1} alt="productImage1" />
             </a>
             <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
             <div className="flex-balance justify-between">
-              <div className="flex-balance space-x-1">
+              <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
                 <p className="text-xs font-bold opacity-40 line-through">
                   $ 60.00
@@ -366,13 +366,13 @@ const MainPage = () => {
               </div>
             </div>
           </div>
-          <div className="sm:card-deck hidden">
+          <div className="card-deck">
             <a href="#">
-              <img className="w-64" src={productImage1} alt="productImage1" />
+              <img className="sm:w-64 w-40" src={productImage1} alt="productImage1" />
             </a>
             <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
             <div className="flex-balance justify-between">
-              <div className="flex-balance space-x-1">
+              <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
                 <p className="text-xs font-bold opacity-40 line-through"></p>
               </div>
@@ -385,13 +385,13 @@ const MainPage = () => {
               </div>
             </div>
           </div>
-          <div className="sm:card-deck hidden">
+          <div className="card-deck">
             <a href="#">
-              <img className="w-64" src={productImage1} alt="productImage1" />
+              <img className="sm:w-64 w-40" src={productImage1} alt="productImage1" />
             </a>
             <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
             <div className="flex-balance justify-between">
-              <div className="flex-balance space-x-1">
+              <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
                 <p className="text-xs font-bold opacity-40 line-through"></p>
               </div>
@@ -404,13 +404,13 @@ const MainPage = () => {
               </div>
             </div>
           </div>
-          <div className="sm:card-deck hidden">
+          <div className="card-deck">
             <a href="#">
-              <img className="w-64" src={productImage1} alt="productImage1" />
+              <img className="sm:w-64 w-40" src={productImage1} alt="productImage1" />
             </a>
             <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
             <div className="flex-balance justify-between">
-              <div className="flex-balance space-x-1">
+              <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
                 <p className="text-xs font-bold opacity-40 line-through"></p>
               </div>
@@ -423,13 +423,13 @@ const MainPage = () => {
               </div>
             </div>
           </div>
-          <div className="sm:card-deck hidden">
+          <div className="card-deck">
             <a href="#">
-              <img className="w-64" src={productImage1} alt="productImage1" />
+              <img className="sm:w-64 w-40" src={productImage1} alt="productImage1" />
             </a>
             <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
             <div className="flex-balance justify-between">
-              <div className="flex-balance space-x-1">
+              <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
                 <p className="text-xs font-bold opacity-40 line-through"></p>
               </div>
@@ -498,11 +498,11 @@ const MainPage = () => {
         <div className="cards-deck">
           <div className="card-deck">
             <a className="sale-50" href="#">
-              <img className="w-64" src={productImage2} alt="productImage2" />
+              <img className="sm:w-64 w-40" src={productImage2} alt="productImage2" />
             </a>
             <p className="leading-normal opacity-60">Leather White Trainers</p>
             <div className="flex-balance justify-between">
-              <div className="flex-balance space-x-1">
+              <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
                 <p className="text-xs font-bold opacity-40 line-through">
                   $ 60.00
@@ -519,11 +519,11 @@ const MainPage = () => {
           </div>
           <div className="card-deck">
             <a href="#">
-              <img className="w-64" src={productImage2} alt="productImage2" />
+              <img className="sm:w-64 w-40" src={productImage2} alt="productImage2" />
             </a>
             <p className="leading-normal opacity-60">Leather White Trainers</p>
             <div className="flex-balance justify-between">
-              <div className="flex-balance space-x-1">
+              <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
                 <p className="text-xs font-bold opacity-40 line-through"></p>
               </div>
@@ -538,11 +538,11 @@ const MainPage = () => {
           </div>
           <div className="card-deck">
             <a href="#">
-              <img className="w-64" src={productImage2} alt="productImage2" />
+              <img className="sm:w-64 w-40" src={productImage2} alt="productImage2" />
             </a>
             <p className="leading-normal opacity-60">Leather White Trainers</p>
             <div className="flex-balance justify-between">
-              <div className="flex-balance space-x-1">
+              <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
                 <p className="text-xs font-bold opacity-40 line-through"></p>
               </div>
@@ -557,11 +557,11 @@ const MainPage = () => {
           </div>
           <div className="card-deck">
             <a href="#">
-              <img className="w-64" src={productImage2} alt="productImage2" />
+              <img className="sm:w-64 w-40" src={productImage2} alt="productImage2" />
             </a>
             <p className="leading-normal opacity-60">Leather White Trainers</p>
             <div className="flex-balance justify-between">
-              <div className="flex-balance space-x-1">
+              <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
                 <p className="text-xs font-bold opacity-40 line-through"></p>
               </div>
@@ -576,11 +576,11 @@ const MainPage = () => {
           </div>
           <div className="card-deck">
             <a href="#">
-              <img className="w-64" src={productImage2} alt="productImage2" />
+              <img className="sm:w-64 w-40" src={productImage2} alt="productImage2" />
             </a>
             <p className="leading-normal opacity-60">Leather White Trainers</p>
             <div className="flex-balance justify-between">
-              <div className="flex-balance space-x-1">
+              <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
                 <p className="text-xs font-bold opacity-40 line-through"></p>
               </div>
@@ -595,11 +595,11 @@ const MainPage = () => {
           </div>
           <div className="card-deck">
             <a className="sale-50" href="#">
-              <img className="w-64" src={productImage2} alt="productImage2" />
+              <img className="sm:w-64 w-40" src={productImage2} alt="productImage2" />
             </a>
             <p className="leading-normal opacity-60">Leather White Trainers</p>
             <div className="flex-balance justify-between">
-              <div className="flex-balance space-x-1">
+              <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
                 <p className="text-xs font-bold opacity-40 line-through">
                   $ 60.00
@@ -614,13 +614,13 @@ const MainPage = () => {
               </div>
             </div>
           </div>
-          <div className="sm:card-deck hidden">
+          <div className="card-deck">
             <a href="#">
-              <img className="w-64" src={productImage2} alt="productImage2" />
+              <img className="sm:w-64 w-40" src={productImage2} alt="productImage2" />
             </a>
             <p className="leading-normal opacity-60">Leather White Trainers</p>
             <div className="flex-balance justify-between">
-              <div className="flex-balance space-x-1">
+              <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
                 <p className="text-xs font-bold opacity-40 line-through"></p>
               </div>
@@ -633,13 +633,13 @@ const MainPage = () => {
               </div>
             </div>
           </div>
-          <div className="sm:card-deck hidden">
+          <div className="card-deck">
             <a href="#">
-              <img className="w-64" src={productImage2} alt="productImage2" />
+              <img className="sm:w-64 w-40" src={productImage2} alt="productImage2" />
             </a>
             <p className="leading-normal opacity-60">Leather White Trainers</p>
             <div className="flex-balance justify-between">
-              <div className="flex-balance space-x-1">
+              <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
                 <p className="text-xs font-bold opacity-40 line-through"></p>
               </div>
@@ -652,13 +652,13 @@ const MainPage = () => {
               </div>
             </div>
           </div>
-          <div className="sm:card-deck hidden">
+          <div className="card-deck">
             <a href="#">
-              <img className="w-64" src={productImage2} alt="productImage2" />
+              <img className="sm:w-64 w-40" src={productImage2} alt="productImage2" />
             </a>
             <p className="leading-normal opacity-60">Leather White Trainers</p>
             <div className="flex-balance justify-between">
-              <div className="flex-balance space-x-1">
+              <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
                 <p className="text-xs font-bold opacity-40 line-through"></p>
               </div>
@@ -671,13 +671,13 @@ const MainPage = () => {
               </div>
             </div>
           </div>
-          <div className="sm:card-deck hidden">
+          <div className="card-deck">
             <a href="#">
-              <img className="w-64" src={productImage2} alt="productImage2" />
+              <img className="sm:w-64 w-40" src={productImage2} alt="productImage2" />
             </a>
             <p className="leading-normal opacity-60">Leather White Trainers</p>
             <div className="flex-balance justify-between">
-              <div className="flex-balance space-x-1">
+              <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
                 <p className="text-xs font-bold opacity-40 line-through"></p>
               </div>
