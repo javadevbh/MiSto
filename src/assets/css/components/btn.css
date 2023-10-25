@@ -2,6 +2,9 @@
   .btn {
     @apply hover:scale-105 transition-transform active:scale-100;
   }
+  .btn-xs {
+    @apply p-2 text-[9px]
+  }
   .btn-sm {
     @apply py-[6px] px-6
   }

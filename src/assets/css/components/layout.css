@@ -8,7 +8,7 @@
     }
 
     .cards-deck {
-        @apply py-12 flex sm:flex-wrap sm:justify-between gap-6 overflow-x-scroll sm:overflow-x-hidden;
+        @apply pt-12 pb-32 flex sm:flex-wrap sm:justify-between sm:gap-20 gap-10 overflow-x-scroll sm:overflow-x-hidden;
     }
 
     .card-deck {

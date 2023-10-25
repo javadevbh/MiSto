@@ -14,12 +14,17 @@ import supportIcon from "../assets/icons/support 1.svg";
 import leftArrow from "../assets/icons/chevron-left 1.svg";
 import yellowStar from "../assets/icons/star 1.svg";
 import grayStar from "../assets/icons/star 2.svg";
+import heartIcon from "../assets/icons/heart 1.svg";
+import scaleIcon from "../assets/icons/scale 1.svg";
 
 //Images
 import productImage1 from "../assets/images/Rectangle 3.jpg";
 import productImage2 from "../assets/images/Rectangle 2.jpg";
-import sectionImage3 from "../assets/images/section-image3.png"
-import sectionImage4 from "../assets/images/section-image4.png"
+import sectionImage3 from "../assets/images/section-image3.png";
+import sectionImage4 from "../assets/images/section-image4.png";
+import productImage3 from "../assets/images/Rectangle 4.jpg";
+import productImage4 from "../assets/images/Rectangle 5.jpg";
+import productImage5 from "../assets/images/Rectangle 6.jpg";
 
 const MainPage = () => {
   return (
@@ -248,10 +253,15 @@ const MainPage = () => {
           </div>
         </div>
         <div className="cards-deck">
-          <div className="card-deck">
+          <div className="card-deck group relative">
             <a className="sale-50" href="#">
-              <img className="sm:w-64 w-40" src={productImage1} alt="productImage1" />
+              <img
+                className="sm:w-64 w-40"
+                src={productImage1}
+                alt="productImage1"
+              />
             </a>
+            <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
             <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
             <div className="flex-balance justify-between">
               <div className="sm:flex-balance flex flex-col space-x-1">
@@ -268,87 +278,38 @@ const MainPage = () => {
                 <img className="icon-sm" src={grayStar} alt="grayStar" />
               </div>
             </div>
-          </div>
-          <div className="card-deck">
-            <a href="#">
-              <img className="sm:w-64 w-40" src={productImage1} alt="productImage1" />
-            </a>
-            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through"></p>
-              </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
+            </div>
+            <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
+              <div className="grid gap-3">
+                <div className="sm:flex-balance sm:space-x-2 hidden">
+                  <img className="w-10 h-10" src={productImage1} alt="productImage1" />
+                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
+                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
+                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                </div>
+                <div className="flex-balance space-x-2">
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                </div>
+                <div className="flex-balance justify-between">
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
+                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
+                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                </div>
               </div>
             </div>
           </div>
-          <div className="card-deck">
+          <div className="card-deck group relative">
             <a href="#">
-              <img className="sm:w-64 w-40" src={productImage1} alt="productImage1" />
+              <img
+                className="sm:w-64 w-40"
+                src={productImage1}
+                alt="productImage1"
+              />
             </a>
-            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through"></p>
-              </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
-              </div>
-            </div>
-          </div>
-          <div className="card-deck">
-            <a href="#">
-              <img className="sm:w-64 w-40" src={productImage1} alt="productImage1" />
-            </a>
-            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through"></p>
-              </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
-              </div>
-            </div>
-          </div>
-          <div className="card-deck">
-            <a href="#">
-              <img className="sm:w-64 w-40" src={productImage1} alt="productImage1" />
-            </a>
-            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through"></p>
-              </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
-              </div>
-            </div>
-          </div>
-          <div className="card-deck">
-            <a className="sale-50" href="#">
-              <img className="sm:w-64 w-40" src={productImage1} alt="productImage1" />
-            </a>
+            <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
             <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
             <div className="flex-balance justify-between">
               <div className="sm:flex-balance flex flex-col space-x-1">
@@ -365,16 +326,45 @@ const MainPage = () => {
                 <img className="icon-sm" src={grayStar} alt="grayStar" />
               </div>
             </div>
+            </div>
+            <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
+              <div className="grid gap-3">
+                <div className="sm:flex-balance sm:space-x-2 hidden">
+                  <img className="w-10 h-10" src={productImage1} alt="productImage1" />
+                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
+                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
+                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                </div>
+                <div className="flex-balance space-x-2">
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                </div>
+                <div className="flex-balance justify-between">
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
+                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
+                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="card-deck">
+          <div className="card-deck group relative">
             <a href="#">
-              <img className="sm:w-64 w-40" src={productImage1} alt="productImage1" />
+              <img
+                className="sm:w-64 w-40"
+                src={productImage1}
+                alt="productImage1"
+              />
             </a>
+            <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
             <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
             <div className="flex-balance justify-between">
               <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through"></p>
+                <p className="text-xs font-bold opacity-40 line-through">
+                  $ 60.00
+                </p>
               </div>
               <div className="flex-balance space-x-[1px]">
                 <img className="icon-sm" src={yellowStar} alt="yellowStar" />
@@ -384,16 +374,45 @@ const MainPage = () => {
                 <img className="icon-sm" src={grayStar} alt="grayStar" />
               </div>
             </div>
+            </div>
+            <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
+              <div className="grid gap-3">
+                <div className="sm:flex-balance sm:space-x-2 hidden">
+                  <img className="w-10 h-10" src={productImage1} alt="productImage1" />
+                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
+                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
+                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                </div>
+                <div className="flex-balance space-x-2">
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                </div>
+                <div className="flex-balance justify-between">
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
+                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
+                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="card-deck">
+          <div className="card-deck group relative">
             <a href="#">
-              <img className="sm:w-64 w-40" src={productImage1} alt="productImage1" />
+              <img
+                className="sm:w-64 w-40"
+                src={productImage1}
+                alt="productImage1"
+              />
             </a>
+            <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
             <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
             <div className="flex-balance justify-between">
               <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through"></p>
+                <p className="text-xs font-bold opacity-40 line-through">
+                  $ 60.00
+                </p>
               </div>
               <div className="flex-balance space-x-[1px]">
                 <img className="icon-sm" src={yellowStar} alt="yellowStar" />
@@ -403,16 +422,45 @@ const MainPage = () => {
                 <img className="icon-sm" src={grayStar} alt="grayStar" />
               </div>
             </div>
+            </div>
+            <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
+              <div className="grid gap-3">
+                <div className="sm:flex-balance sm:space-x-2 hidden">
+                  <img className="w-10 h-10" src={productImage1} alt="productImage1" />
+                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
+                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
+                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                </div>
+                <div className="flex-balance space-x-2">
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                </div>
+                <div className="flex-balance justify-between">
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
+                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
+                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="card-deck">
-            <a href="#">
-              <img className="sm:w-64 w-40" src={productImage1} alt="productImage1" />
+          <div className="card-deck group relative">
+            <a className="sale-50" href="#">
+              <img
+                className="sm:w-64 w-40"
+                src={productImage1}
+                alt="productImage1"
+              />
             </a>
+            <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
             <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
             <div className="flex-balance justify-between">
               <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through"></p>
+                <p className="text-xs font-bold opacity-40 line-through">
+                  $ 60.00
+                </p>
               </div>
               <div className="flex-balance space-x-[1px]">
                 <img className="icon-sm" src={yellowStar} alt="yellowStar" />
@@ -422,16 +470,45 @@ const MainPage = () => {
                 <img className="icon-sm" src={grayStar} alt="grayStar" />
               </div>
             </div>
+            </div>
+            <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
+              <div className="grid gap-3">
+                <div className="sm:flex-balance sm:space-x-2 hidden">
+                  <img className="w-10 h-10" src={productImage1} alt="productImage1" />
+                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
+                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
+                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                </div>
+                <div className="flex-balance space-x-2">
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                </div>
+                <div className="flex-balance justify-between">
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
+                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
+                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="card-deck">
+          <div className="card-deck group relative">
             <a href="#">
-              <img className="sm:w-64 w-40" src={productImage1} alt="productImage1" />
+              <img
+                className="sm:w-64 w-40"
+                src={productImage1}
+                alt="productImage1"
+              />
             </a>
+            <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
             <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
             <div className="flex-balance justify-between">
               <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through"></p>
+                <p className="text-xs font-bold opacity-40 line-through">
+                  $ 60.00
+                </p>
               </div>
               <div className="flex-balance space-x-[1px]">
                 <img className="icon-sm" src={yellowStar} alt="yellowStar" />
@@ -439,6 +516,124 @@ const MainPage = () => {
                 <img className="icon-sm" src={yellowStar} alt="yellowStar" />
                 <img className="icon-sm" src={yellowStar} alt="yellowStar" />
                 <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+            </div>
+            <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
+              <div className="grid gap-3">
+                <div className="sm:flex-balance sm:space-x-2 hidden">
+                  <img className="w-10 h-10" src={productImage1} alt="productImage1" />
+                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
+                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
+                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                </div>
+                <div className="flex-balance space-x-2">
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                </div>
+                <div className="flex-balance justify-between">
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
+                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
+                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card-deck group relative">
+            <a href="#">
+              <img
+                className="sm:w-64 w-40"
+                src={productImage1}
+                alt="productImage1"
+              />
+            </a>
+            <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
+            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
+            <div className="flex-balance justify-between">
+              <div className="sm:flex-balance flex flex-col space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through">
+                  $ 60.00
+                </p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+            </div>
+            <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
+              <div className="grid gap-3">
+                <div className="sm:flex-balance sm:space-x-2 hidden">
+                  <img className="w-10 h-10" src={productImage1} alt="productImage1" />
+                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
+                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
+                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                </div>
+                <div className="flex-balance space-x-2">
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                </div>
+                <div className="flex-balance justify-between">
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
+                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
+                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card-deck group relative">
+            <a href="#">
+              <img
+                className="sm:w-64 w-40"
+                src={productImage1}
+                alt="productImage1"
+              />
+            </a>
+            <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
+            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
+            <div className="flex-balance justify-between">
+              <div className="sm:flex-balance flex flex-col space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through">
+                  $ 60.00
+                </p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+            </div>
+            <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
+              <div className="grid gap-3">
+                <div className="sm:flex-balance sm:space-x-2 hidden">
+                  <img className="w-10 h-10" src={productImage1} alt="productImage1" />
+                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
+                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
+                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                </div>
+                <div className="flex-balance space-x-2">
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                </div>
+                <div className="flex-balance justify-between">
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
+                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
+                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                </div>
               </div>
             </div>
           </div>
@@ -496,10 +691,15 @@ const MainPage = () => {
           </div>
         </div>
         <div className="cards-deck">
-          <div className="card-deck">
+          <div className="card-deck group relative">
             <a className="sale-50" href="#">
-              <img className="sm:w-64 w-40" src={productImage2} alt="productImage2" />
+              <img
+                className="sm:w-64 w-40"
+                src={productImage2}
+                alt="productImage2"
+              />
             </a>
+            <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
             <p className="leading-normal opacity-60">Leather White Trainers</p>
             <div className="flex-balance justify-between">
               <div className="sm:flex-balance flex flex-col space-x-1">
@@ -516,87 +716,38 @@ const MainPage = () => {
                 <img className="icon-sm" src={grayStar} alt="grayStar" />
               </div>
             </div>
-          </div>
-          <div className="card-deck">
-            <a href="#">
-              <img className="sm:w-64 w-40" src={productImage2} alt="productImage2" />
-            </a>
-            <p className="leading-normal opacity-60">Leather White Trainers</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through"></p>
-              </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
+            </div>
+            <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
+              <div className="grid gap-3">
+                <div className="sm:flex-balance sm:space-x-2 hidden">
+                  <img className="w-10 h-10" src={productImage2} alt="productImage2" />
+                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
+                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
+                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                </div>
+                <div className="flex-balance space-x-2">
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                </div>
+                <div className="flex-balance justify-between">
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
+                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
+                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                </div>
               </div>
             </div>
           </div>
-          <div className="card-deck">
+          <div className="card-deck group relative">
             <a href="#">
-              <img className="sm:w-64 w-40" src={productImage2} alt="productImage2" />
+              <img
+                className="sm:w-64 w-40"
+                src={productImage2}
+                alt="productImage2"
+              />
             </a>
-            <p className="leading-normal opacity-60">Leather White Trainers</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through"></p>
-              </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
-              </div>
-            </div>
-          </div>
-          <div className="card-deck">
-            <a href="#">
-              <img className="sm:w-64 w-40" src={productImage2} alt="productImage2" />
-            </a>
-            <p className="leading-normal opacity-60">Leather White Trainers</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through"></p>
-              </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
-              </div>
-            </div>
-          </div>
-          <div className="card-deck">
-            <a href="#">
-              <img className="sm:w-64 w-40" src={productImage2} alt="productImage2" />
-            </a>
-            <p className="leading-normal opacity-60">Leather White Trainers</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through"></p>
-              </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
-              </div>
-            </div>
-          </div>
-          <div className="card-deck">
-            <a className="sale-50" href="#">
-              <img className="sm:w-64 w-40" src={productImage2} alt="productImage2" />
-            </a>
+            <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
             <p className="leading-normal opacity-60">Leather White Trainers</p>
             <div className="flex-balance justify-between">
               <div className="sm:flex-balance flex flex-col space-x-1">
@@ -613,16 +764,45 @@ const MainPage = () => {
                 <img className="icon-sm" src={grayStar} alt="grayStar" />
               </div>
             </div>
+            </div>
+            <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
+              <div className="grid gap-3">
+                <div className="sm:flex-balance sm:space-x-2 hidden">
+                  <img className="w-10 h-10" src={productImage2} alt="productImage2" />
+                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
+                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
+                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                </div>
+                <div className="flex-balance space-x-2">
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                </div>
+                <div className="flex-balance justify-between">
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
+                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
+                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="card-deck">
+          <div className="card-deck group relative">
             <a href="#">
-              <img className="sm:w-64 w-40" src={productImage2} alt="productImage2" />
+              <img
+                className="sm:w-64 w-40"
+                src={productImage2}
+                alt="productImage2"
+              />
             </a>
+            <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
             <p className="leading-normal opacity-60">Leather White Trainers</p>
             <div className="flex-balance justify-between">
               <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through"></p>
+                <p className="text-xs font-bold opacity-40 line-through">
+                  $ 60.00
+                </p>
               </div>
               <div className="flex-balance space-x-[1px]">
                 <img className="icon-sm" src={yellowStar} alt="yellowStar" />
@@ -632,16 +812,45 @@ const MainPage = () => {
                 <img className="icon-sm" src={grayStar} alt="grayStar" />
               </div>
             </div>
+            </div>
+            <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
+              <div className="grid gap-3">
+                <div className="sm:flex-balance sm:space-x-2 hidden">
+                  <img className="w-10 h-10" src={productImage2} alt="productImage2" />
+                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
+                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
+                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                </div>
+                <div className="flex-balance space-x-2">
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                </div>
+                <div className="flex-balance justify-between">
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
+                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
+                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="card-deck">
+          <div className="card-deck group relative">
             <a href="#">
-              <img className="sm:w-64 w-40" src={productImage2} alt="productImage2" />
+              <img
+                className="sm:w-64 w-40"
+                src={productImage2}
+                alt="productImage2"
+              />
             </a>
+            <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
             <p className="leading-normal opacity-60">Leather White Trainers</p>
             <div className="flex-balance justify-between">
               <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through"></p>
+                <p className="text-xs font-bold opacity-40 line-through">
+                  $ 60.00
+                </p>
               </div>
               <div className="flex-balance space-x-[1px]">
                 <img className="icon-sm" src={yellowStar} alt="yellowStar" />
@@ -651,16 +860,45 @@ const MainPage = () => {
                 <img className="icon-sm" src={grayStar} alt="grayStar" />
               </div>
             </div>
+            </div>
+            <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
+              <div className="grid gap-3">
+                <div className="sm:flex-balance sm:space-x-2 hidden">
+                  <img className="w-10 h-10" src={productImage2} alt="productImage2" />
+                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
+                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
+                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                </div>
+                <div className="flex-balance space-x-2">
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                </div>
+                <div className="flex-balance justify-between">
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
+                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
+                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="card-deck">
-            <a href="#">
-              <img className="sm:w-64 w-40" src={productImage2} alt="productImage2" />
+          <div className="card-deck group relative">
+            <a className="sale-50" href="#">
+              <img
+                className="sm:w-64 w-40"
+                src={productImage2}
+                alt="productImage2"
+              />
             </a>
+            <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
             <p className="leading-normal opacity-60">Leather White Trainers</p>
             <div className="flex-balance justify-between">
               <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through"></p>
+                <p className="text-xs font-bold opacity-40 line-through">
+                  $ 60.00
+                </p>
               </div>
               <div className="flex-balance space-x-[1px]">
                 <img className="icon-sm" src={yellowStar} alt="yellowStar" />
@@ -670,16 +908,45 @@ const MainPage = () => {
                 <img className="icon-sm" src={grayStar} alt="grayStar" />
               </div>
             </div>
+            </div>
+            <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
+              <div className="grid gap-3">
+                <div className="sm:flex-balance sm:space-x-2 hidden">
+                  <img className="w-10 h-10" src={productImage2} alt="productImage2" />
+                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
+                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
+                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                </div>
+                <div className="flex-balance space-x-2">
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                </div>
+                <div className="flex-balance justify-between">
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
+                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
+                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="card-deck">
+          <div className="card-deck group relative">
             <a href="#">
-              <img className="sm:w-64 w-40" src={productImage2} alt="productImage2" />
+              <img
+                className="sm:w-64 w-40"
+                src={productImage2}
+                alt="productImage2"
+              />
             </a>
+            <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
             <p className="leading-normal opacity-60">Leather White Trainers</p>
             <div className="flex-balance justify-between">
               <div className="sm:flex-balance flex flex-col space-x-1">
                 <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through"></p>
+                <p className="text-xs font-bold opacity-40 line-through">
+                  $ 60.00
+                </p>
               </div>
               <div className="flex-balance space-x-[1px]">
                 <img className="icon-sm" src={yellowStar} alt="yellowStar" />
@@ -687,6 +954,124 @@ const MainPage = () => {
                 <img className="icon-sm" src={yellowStar} alt="yellowStar" />
                 <img className="icon-sm" src={yellowStar} alt="yellowStar" />
                 <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+            </div>
+            <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
+              <div className="grid gap-3">
+                <div className="sm:flex-balance sm:space-x-2 hidden">
+                  <img className="w-10 h-10" src={productImage2} alt="productImage2" />
+                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
+                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
+                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                </div>
+                <div className="flex-balance space-x-2">
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                </div>
+                <div className="flex-balance justify-between">
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
+                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
+                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card-deck group relative">
+            <a href="#">
+              <img
+                className="sm:w-64 w-40"
+                src={productImage2}
+                alt="productImage2"
+              />
+            </a>
+            <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
+            <p className="leading-normal opacity-60">Leather White Trainers</p>
+            <div className="flex-balance justify-between">
+              <div className="sm:flex-balance flex flex-col space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through">
+                  $ 60.00
+                </p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+            </div>
+            <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
+              <div className="grid gap-3">
+                <div className="sm:flex-balance sm:space-x-2 hidden">
+                  <img className="w-10 h-10" src={productImage2} alt="productImage2" />
+                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
+                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
+                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                </div>
+                <div className="flex-balance space-x-2">
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                </div>
+                <div className="flex-balance justify-between">
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
+                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
+                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card-deck group relative">
+            <a href="#">
+              <img
+                className="sm:w-64 w-40"
+                src={productImage2}
+                alt="productImage2"
+              />
+            </a>
+            <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
+            <p className="leading-normal opacity-60">Leather White Trainers</p>
+            <div className="flex-balance justify-between">
+              <div className="sm:flex-balance flex flex-col space-x-1">
+                <p className="font-bold leading-normal">$ 30.00</p>
+                <p className="text-xs font-bold opacity-40 line-through">
+                  $ 60.00
+                </p>
+              </div>
+              <div className="flex-balance space-x-[1px]">
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                <img className="icon-sm" src={grayStar} alt="grayStar" />
+              </div>
+            </div>
+            </div>
+            <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
+              <div className="grid gap-3">
+                <div className="sm:flex-balance sm:space-x-2 hidden">
+                  <img className="w-10 h-10" src={productImage2} alt="productImage2" />
+                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
+                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
+                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                </div>
+                <div className="flex-balance space-x-2">
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                </div>
+                <div className="flex-balance justify-between">
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
+                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
+                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                </div>
               </div>
             </div>
           </div>
@@ -708,20 +1093,44 @@ const MainPage = () => {
         <div className="bg-sectionImage1 bg-no-repeat bg-top flex-balance justify-center sm:w-1/2 w-full h-60">
           <div className="bg-white rounded-md px-6 py-4 text-center">
             <h6 className="leading-normal opacity-60 mb-2">Sale</h6>
-            <h4>Get UP to <span className="text-base font-semibold tracking-[0.96px] uppercase text-primary-pink">50% off</span></h4>
+            <h4>
+              Get UP to{" "}
+              <span className="text-base font-semibold tracking-[0.96px] uppercase text-primary-pink">
+                50% off
+              </span>
+            </h4>
           </div>
         </div>
       </section>
       <section className="pb-section">
         <div className="px-content bg-secondary-gray h-[580px] flex-balance lg:-space-x-10 justify-center">
-          <img className="hidden lg:block z-20 mt-20" src={sectionImage4} alt="sectionImage4" />
+          <img
+            className="hidden lg:block z-20 mt-20"
+            src={sectionImage4}
+            alt="sectionImage4"
+          />
           <div className="bg-white rounded-[4px] px-10 py-20 lg:pb-32 lg:pt-24 lg:px-24 text-center z-10">
             <h6 className="leading-normal opacity-40 mb-4">Special Offer</h6>
-            <h2 className="mb-8">Subscribe And <span className="text-[26px] leading-[36px] tracking-[1.56px] uppercase font-semibold text-primary-pink">Get 10% Off</span></h2>
-            <input className="input input-md text-center mb-6" placeholder="Enter your email" type="email"/>
-            <button className="btn btn-lg btn-black w-full opacity-90">Subscribe</button>
+            <h2 className="mb-8">
+              Subscribe And{" "}
+              <span className="text-[26px] leading-[36px] tracking-[1.56px] uppercase font-semibold text-primary-pink">
+                Get 10% Off
+              </span>
+            </h2>
+            <input
+              className="input input-md text-center mb-6"
+              placeholder="Enter your email"
+              type="email"
+            />
+            <button className="btn btn-lg btn-black w-full opacity-90">
+              Subscribe
+            </button>
           </div>
-          <img className="hidden lg:block z-20 mt-14" src={sectionImage3} alt="sectionImage3" />
+          <img
+            className="hidden lg:block z-20 mt-14"
+            src={sectionImage3}
+            alt="sectionImage3"
+          />
         </div>
       </section>
     </main>
