@@ -20,11 +20,14 @@ import scaleIcon from "../assets/icons/scale 1.svg";
 //Images
 import productImage1 from "../assets/images/Rectangle 3.jpg";
 import productImage2 from "../assets/images/Rectangle 2.jpg";
-import sectionImage3 from "../assets/images/section-image3.png";
-import sectionImage4 from "../assets/images/section-image4.png";
+import sectionImage3 from "../assets/images/section images/section-image3.png";
+import sectionImage4 from "../assets/images/section images/section-image4.png";
 import productImage3 from "../assets/images/Rectangle 4.jpg";
 import productImage4 from "../assets/images/Rectangle 5.jpg";
 import productImage5 from "../assets/images/Rectangle 6.jpg";
+import articleImage1 from "../assets/images/article images/article-image1.jpg";
+import articleImage2 from "../assets/images/article images/article-image2.jpg";
+import articleImage3 from "../assets/images/article images/article-image3.jpg";
 
 const MainPage = () => {
   return (
@@ -262,41 +265,77 @@ const MainPage = () => {
               />
             </a>
             <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
-            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through">
-                  $ 60.00
-                </p>
+              <p className="leading-normal opacity-60">
+                Women's tracksuit Q109
+              </p>
+              <div className="flex-balance justify-between">
+                <div className="sm:flex-balance flex flex-col space-x-1">
+                  <p className="font-bold leading-normal">$ 30.00</p>
+                  <p className="text-xs font-bold opacity-40 line-through">
+                    $ 60.00
+                  </p>
+                </div>
+                <div className="flex-balance space-x-[1px]">
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={grayStar} alt="grayStar" />
+                </div>
               </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
-              </div>
-            </div>
             </div>
             <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
               <div className="grid gap-3">
                 <div className="sm:flex-balance sm:space-x-2 hidden">
-                  <img className="w-10 h-10" src={productImage1} alt="productImage1" />
-                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
-                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
-                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage1}
+                    alt="productImage1"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage3}
+                    alt="productImage3"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage4}
+                    alt="productImage4"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage5}
+                    alt="productImage5"
+                  />
                 </div>
                 <div className="flex-balance space-x-2">
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    XS
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    S
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    M
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    L
+                  </small>
                 </div>
                 <div className="flex-balance justify-between">
-                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
-                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
-                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">
+                    Add to cart
+                  </button>
+                  <img
+                    className="icon-cursor"
+                    src={heartIcon}
+                    alt="heartIcon"
+                  />
+                  <img
+                    className="icon-cursor"
+                    src={scaleIcon}
+                    alt="scaleIcon"
+                  />
                 </div>
               </div>
             </div>
@@ -310,41 +349,74 @@ const MainPage = () => {
               />
             </a>
             <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
-            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through">
-                  $ 60.00
-                </p>
+              <p className="leading-normal opacity-60">
+                Women's tracksuit Q109
+              </p>
+              <div className="flex-balance justify-between">
+                <div className="sm:flex-balance flex flex-col space-x-1">
+                  <p className="font-bold leading-normal">$ 30.00</p>
+                </div>
+                <div className="flex-balance space-x-[1px]">
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={grayStar} alt="grayStar" />
+                </div>
               </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
-              </div>
-            </div>
             </div>
             <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
               <div className="grid gap-3">
                 <div className="sm:flex-balance sm:space-x-2 hidden">
-                  <img className="w-10 h-10" src={productImage1} alt="productImage1" />
-                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
-                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
-                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage1}
+                    alt="productImage1"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage3}
+                    alt="productImage3"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage4}
+                    alt="productImage4"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage5}
+                    alt="productImage5"
+                  />
                 </div>
                 <div className="flex-balance space-x-2">
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    XS
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    S
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    M
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    L
+                  </small>
                 </div>
                 <div className="flex-balance justify-between">
-                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
-                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
-                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">
+                    Add to cart
+                  </button>
+                  <img
+                    className="icon-cursor"
+                    src={heartIcon}
+                    alt="heartIcon"
+                  />
+                  <img
+                    className="icon-cursor"
+                    src={scaleIcon}
+                    alt="scaleIcon"
+                  />
                 </div>
               </div>
             </div>
@@ -358,41 +430,74 @@ const MainPage = () => {
               />
             </a>
             <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
-            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through">
-                  $ 60.00
-                </p>
+              <p className="leading-normal opacity-60">
+                Women's tracksuit Q109
+              </p>
+              <div className="flex-balance justify-between">
+                <div className="sm:flex-balance flex flex-col space-x-1">
+                  <p className="font-bold leading-normal">$ 30.00</p>
+                </div>
+                <div className="flex-balance space-x-[1px]">
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={grayStar} alt="grayStar" />
+                </div>
               </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
-              </div>
-            </div>
             </div>
             <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
               <div className="grid gap-3">
                 <div className="sm:flex-balance sm:space-x-2 hidden">
-                  <img className="w-10 h-10" src={productImage1} alt="productImage1" />
-                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
-                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
-                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage1}
+                    alt="productImage1"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage3}
+                    alt="productImage3"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage4}
+                    alt="productImage4"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage5}
+                    alt="productImage5"
+                  />
                 </div>
                 <div className="flex-balance space-x-2">
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    XS
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    S
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    M
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    L
+                  </small>
                 </div>
                 <div className="flex-balance justify-between">
-                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
-                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
-                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">
+                    Add to cart
+                  </button>
+                  <img
+                    className="icon-cursor"
+                    src={heartIcon}
+                    alt="heartIcon"
+                  />
+                  <img
+                    className="icon-cursor"
+                    src={scaleIcon}
+                    alt="scaleIcon"
+                  />
                 </div>
               </div>
             </div>
@@ -406,41 +511,74 @@ const MainPage = () => {
               />
             </a>
             <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
-            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through">
-                  $ 60.00
-                </p>
+              <p className="leading-normal opacity-60">
+                Women's tracksuit Q109
+              </p>
+              <div className="flex-balance justify-between">
+                <div className="sm:flex-balance flex flex-col space-x-1">
+                  <p className="font-bold leading-normal">$ 30.00</p>
+                </div>
+                <div className="flex-balance space-x-[1px]">
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={grayStar} alt="grayStar" />
+                </div>
               </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
-              </div>
-            </div>
             </div>
             <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
               <div className="grid gap-3">
                 <div className="sm:flex-balance sm:space-x-2 hidden">
-                  <img className="w-10 h-10" src={productImage1} alt="productImage1" />
-                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
-                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
-                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage1}
+                    alt="productImage1"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage3}
+                    alt="productImage3"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage4}
+                    alt="productImage4"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage5}
+                    alt="productImage5"
+                  />
                 </div>
                 <div className="flex-balance space-x-2">
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    XS
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    S
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    M
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    L
+                  </small>
                 </div>
                 <div className="flex-balance justify-between">
-                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
-                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
-                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">
+                    Add to cart
+                  </button>
+                  <img
+                    className="icon-cursor"
+                    src={heartIcon}
+                    alt="heartIcon"
+                  />
+                  <img
+                    className="icon-cursor"
+                    src={scaleIcon}
+                    alt="scaleIcon"
+                  />
                 </div>
               </div>
             </div>
@@ -454,41 +592,77 @@ const MainPage = () => {
               />
             </a>
             <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
-            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through">
-                  $ 60.00
-                </p>
+              <p className="leading-normal opacity-60">
+                Women's tracksuit Q109
+              </p>
+              <div className="flex-balance justify-between">
+                <div className="sm:flex-balance flex flex-col space-x-1">
+                  <p className="font-bold leading-normal">$ 30.00</p>
+                  <p className="text-xs font-bold opacity-40 line-through">
+                    $ 60.00
+                  </p>
+                </div>
+                <div className="flex-balance space-x-[1px]">
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={grayStar} alt="grayStar" />
+                </div>
               </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
-              </div>
-            </div>
             </div>
             <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
               <div className="grid gap-3">
                 <div className="sm:flex-balance sm:space-x-2 hidden">
-                  <img className="w-10 h-10" src={productImage1} alt="productImage1" />
-                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
-                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
-                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage1}
+                    alt="productImage1"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage3}
+                    alt="productImage3"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage4}
+                    alt="productImage4"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage5}
+                    alt="productImage5"
+                  />
                 </div>
                 <div className="flex-balance space-x-2">
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    XS
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    S
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    M
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    L
+                  </small>
                 </div>
                 <div className="flex-balance justify-between">
-                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
-                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
-                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">
+                    Add to cart
+                  </button>
+                  <img
+                    className="icon-cursor"
+                    src={heartIcon}
+                    alt="heartIcon"
+                  />
+                  <img
+                    className="icon-cursor"
+                    src={scaleIcon}
+                    alt="scaleIcon"
+                  />
                 </div>
               </div>
             </div>
@@ -502,41 +676,74 @@ const MainPage = () => {
               />
             </a>
             <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
-            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through">
-                  $ 60.00
-                </p>
+              <p className="leading-normal opacity-60">
+                Women's tracksuit Q109
+              </p>
+              <div className="flex-balance justify-between">
+                <div className="sm:flex-balance flex flex-col space-x-1">
+                  <p className="font-bold leading-normal">$ 30.00</p>
+                </div>
+                <div className="flex-balance space-x-[1px]">
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={grayStar} alt="grayStar" />
+                </div>
               </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
-              </div>
-            </div>
             </div>
             <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
               <div className="grid gap-3">
                 <div className="sm:flex-balance sm:space-x-2 hidden">
-                  <img className="w-10 h-10" src={productImage1} alt="productImage1" />
-                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
-                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
-                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage1}
+                    alt="productImage1"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage3}
+                    alt="productImage3"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage4}
+                    alt="productImage4"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage5}
+                    alt="productImage5"
+                  />
                 </div>
                 <div className="flex-balance space-x-2">
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    XS
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    S
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    M
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    L
+                  </small>
                 </div>
                 <div className="flex-balance justify-between">
-                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
-                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
-                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">
+                    Add to cart
+                  </button>
+                  <img
+                    className="icon-cursor"
+                    src={heartIcon}
+                    alt="heartIcon"
+                  />
+                  <img
+                    className="icon-cursor"
+                    src={scaleIcon}
+                    alt="scaleIcon"
+                  />
                 </div>
               </div>
             </div>
@@ -550,41 +757,74 @@ const MainPage = () => {
               />
             </a>
             <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
-            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through">
-                  $ 60.00
-                </p>
+              <p className="leading-normal opacity-60">
+                Women's tracksuit Q109
+              </p>
+              <div className="flex-balance justify-between">
+                <div className="sm:flex-balance flex flex-col space-x-1">
+                  <p className="font-bold leading-normal">$ 30.00</p>
+                </div>
+                <div className="flex-balance space-x-[1px]">
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={grayStar} alt="grayStar" />
+                </div>
               </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
-              </div>
-            </div>
             </div>
             <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
               <div className="grid gap-3">
                 <div className="sm:flex-balance sm:space-x-2 hidden">
-                  <img className="w-10 h-10" src={productImage1} alt="productImage1" />
-                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
-                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
-                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage1}
+                    alt="productImage1"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage3}
+                    alt="productImage3"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage4}
+                    alt="productImage4"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage5}
+                    alt="productImage5"
+                  />
                 </div>
                 <div className="flex-balance space-x-2">
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    XS
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    S
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    M
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    L
+                  </small>
                 </div>
                 <div className="flex-balance justify-between">
-                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
-                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
-                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">
+                    Add to cart
+                  </button>
+                  <img
+                    className="icon-cursor"
+                    src={heartIcon}
+                    alt="heartIcon"
+                  />
+                  <img
+                    className="icon-cursor"
+                    src={scaleIcon}
+                    alt="scaleIcon"
+                  />
                 </div>
               </div>
             </div>
@@ -598,41 +838,74 @@ const MainPage = () => {
               />
             </a>
             <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
-            <p className="leading-normal opacity-60">Women's tracksuit Q109</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through">
-                  $ 60.00
-                </p>
+              <p className="leading-normal opacity-60">
+                Women's tracksuit Q109
+              </p>
+              <div className="flex-balance justify-between">
+                <div className="sm:flex-balance flex flex-col space-x-1">
+                  <p className="font-bold leading-normal">$ 30.00</p>
+                </div>
+                <div className="flex-balance space-x-[1px]">
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={grayStar} alt="grayStar" />
+                </div>
               </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
-              </div>
-            </div>
             </div>
             <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
               <div className="grid gap-3">
                 <div className="sm:flex-balance sm:space-x-2 hidden">
-                  <img className="w-10 h-10" src={productImage1} alt="productImage1" />
-                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
-                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
-                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage1}
+                    alt="productImage1"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage3}
+                    alt="productImage3"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage4}
+                    alt="productImage4"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage5}
+                    alt="productImage5"
+                  />
                 </div>
                 <div className="flex-balance space-x-2">
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    XS
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    S
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    M
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    L
+                  </small>
                 </div>
                 <div className="flex-balance justify-between">
-                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
-                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
-                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">
+                    Add to cart
+                  </button>
+                  <img
+                    className="icon-cursor"
+                    src={heartIcon}
+                    alt="heartIcon"
+                  />
+                  <img
+                    className="icon-cursor"
+                    src={scaleIcon}
+                    alt="scaleIcon"
+                  />
                 </div>
               </div>
             </div>
@@ -700,41 +973,77 @@ const MainPage = () => {
               />
             </a>
             <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
-            <p className="leading-normal opacity-60">Leather White Trainers</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through">
-                  $ 60.00
-                </p>
+              <p className="leading-normal opacity-60">
+                Leather White Trainers
+              </p>
+              <div className="flex-balance justify-between">
+                <div className="sm:flex-balance flex flex-col space-x-1">
+                  <p className="font-bold leading-normal">$ 30.00</p>
+                  <p className="text-xs font-bold opacity-40 line-through">
+                    $ 60.00
+                  </p>
+                </div>
+                <div className="flex-balance space-x-[1px]">
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={grayStar} alt="grayStar" />
+                </div>
               </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
-              </div>
-            </div>
             </div>
             <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
               <div className="grid gap-3">
                 <div className="sm:flex-balance sm:space-x-2 hidden">
-                  <img className="w-10 h-10" src={productImage2} alt="productImage2" />
-                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
-                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
-                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage2}
+                    alt="productImage2"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage3}
+                    alt="productImage3"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage4}
+                    alt="productImage4"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage5}
+                    alt="productImage5"
+                  />
                 </div>
                 <div className="flex-balance space-x-2">
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    XS
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    S
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    M
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    L
+                  </small>
                 </div>
                 <div className="flex-balance justify-between">
-                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
-                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
-                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">
+                    Add to cart
+                  </button>
+                  <img
+                    className="icon-cursor"
+                    src={heartIcon}
+                    alt="heartIcon"
+                  />
+                  <img
+                    className="icon-cursor"
+                    src={scaleIcon}
+                    alt="scaleIcon"
+                  />
                 </div>
               </div>
             </div>
@@ -748,41 +1057,74 @@ const MainPage = () => {
               />
             </a>
             <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
-            <p className="leading-normal opacity-60">Leather White Trainers</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through">
-                  $ 60.00
-                </p>
+              <p className="leading-normal opacity-60">
+                Leather White Trainers
+              </p>
+              <div className="flex-balance justify-between">
+                <div className="sm:flex-balance flex flex-col space-x-1">
+                  <p className="font-bold leading-normal">$ 30.00</p>
+                </div>
+                <div className="flex-balance space-x-[1px]">
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={grayStar} alt="grayStar" />
+                </div>
               </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
-              </div>
-            </div>
             </div>
             <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
               <div className="grid gap-3">
                 <div className="sm:flex-balance sm:space-x-2 hidden">
-                  <img className="w-10 h-10" src={productImage2} alt="productImage2" />
-                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
-                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
-                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage2}
+                    alt="productImage2"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage3}
+                    alt="productImage3"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage4}
+                    alt="productImage4"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage5}
+                    alt="productImage5"
+                  />
                 </div>
                 <div className="flex-balance space-x-2">
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    XS
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    S
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    M
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    L
+                  </small>
                 </div>
                 <div className="flex-balance justify-between">
-                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
-                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
-                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">
+                    Add to cart
+                  </button>
+                  <img
+                    className="icon-cursor"
+                    src={heartIcon}
+                    alt="heartIcon"
+                  />
+                  <img
+                    className="icon-cursor"
+                    src={scaleIcon}
+                    alt="scaleIcon"
+                  />
                 </div>
               </div>
             </div>
@@ -796,41 +1138,74 @@ const MainPage = () => {
               />
             </a>
             <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
-            <p className="leading-normal opacity-60">Leather White Trainers</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through">
-                  $ 60.00
-                </p>
+              <p className="leading-normal opacity-60">
+                Leather White Trainers
+              </p>
+              <div className="flex-balance justify-between">
+                <div className="sm:flex-balance flex flex-col space-x-1">
+                  <p className="font-bold leading-normal">$ 30.00</p>
+                </div>
+                <div className="flex-balance space-x-[1px]">
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={grayStar} alt="grayStar" />
+                </div>
               </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
-              </div>
-            </div>
             </div>
             <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
               <div className="grid gap-3">
                 <div className="sm:flex-balance sm:space-x-2 hidden">
-                  <img className="w-10 h-10" src={productImage2} alt="productImage2" />
-                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
-                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
-                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage2}
+                    alt="productImage2"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage3}
+                    alt="productImage3"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage4}
+                    alt="productImage4"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage5}
+                    alt="productImage5"
+                  />
                 </div>
                 <div className="flex-balance space-x-2">
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    XS
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    S
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    M
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    L
+                  </small>
                 </div>
                 <div className="flex-balance justify-between">
-                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
-                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
-                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">
+                    Add to cart
+                  </button>
+                  <img
+                    className="icon-cursor"
+                    src={heartIcon}
+                    alt="heartIcon"
+                  />
+                  <img
+                    className="icon-cursor"
+                    src={scaleIcon}
+                    alt="scaleIcon"
+                  />
                 </div>
               </div>
             </div>
@@ -844,41 +1219,74 @@ const MainPage = () => {
               />
             </a>
             <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
-            <p className="leading-normal opacity-60">Leather White Trainers</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through">
-                  $ 60.00
-                </p>
+              <p className="leading-normal opacity-60">
+                Leather White Trainers
+              </p>
+              <div className="flex-balance justify-between">
+                <div className="sm:flex-balance flex flex-col space-x-1">
+                  <p className="font-bold leading-normal">$ 30.00</p>
+                </div>
+                <div className="flex-balance space-x-[1px]">
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={grayStar} alt="grayStar" />
+                </div>
               </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
-              </div>
-            </div>
             </div>
             <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
               <div className="grid gap-3">
                 <div className="sm:flex-balance sm:space-x-2 hidden">
-                  <img className="w-10 h-10" src={productImage2} alt="productImage2" />
-                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
-                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
-                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage2}
+                    alt="productImage2"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage3}
+                    alt="productImage3"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage4}
+                    alt="productImage4"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage5}
+                    alt="productImage5"
+                  />
                 </div>
                 <div className="flex-balance space-x-2">
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    XS
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    S
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    M
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    L
+                  </small>
                 </div>
                 <div className="flex-balance justify-between">
-                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
-                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
-                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">
+                    Add to cart
+                  </button>
+                  <img
+                    className="icon-cursor"
+                    src={heartIcon}
+                    alt="heartIcon"
+                  />
+                  <img
+                    className="icon-cursor"
+                    src={scaleIcon}
+                    alt="scaleIcon"
+                  />
                 </div>
               </div>
             </div>
@@ -892,41 +1300,77 @@ const MainPage = () => {
               />
             </a>
             <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
-            <p className="leading-normal opacity-60">Leather White Trainers</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through">
-                  $ 60.00
-                </p>
+              <p className="leading-normal opacity-60">
+                Leather White Trainers
+              </p>
+              <div className="flex-balance justify-between">
+                <div className="sm:flex-balance flex flex-col space-x-1">
+                  <p className="font-bold leading-normal">$ 30.00</p>
+                  <p className="text-xs font-bold opacity-40 line-through">
+                    $ 60.00
+                  </p>
+                </div>
+                <div className="flex-balance space-x-[1px]">
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={grayStar} alt="grayStar" />
+                </div>
               </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
-              </div>
-            </div>
             </div>
             <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
               <div className="grid gap-3">
                 <div className="sm:flex-balance sm:space-x-2 hidden">
-                  <img className="w-10 h-10" src={productImage2} alt="productImage2" />
-                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
-                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
-                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage2}
+                    alt="productImage2"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage3}
+                    alt="productImage3"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage4}
+                    alt="productImage4"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage5}
+                    alt="productImage5"
+                  />
                 </div>
                 <div className="flex-balance space-x-2">
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    XS
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    S
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    M
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    L
+                  </small>
                 </div>
                 <div className="flex-balance justify-between">
-                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
-                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
-                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">
+                    Add to cart
+                  </button>
+                  <img
+                    className="icon-cursor"
+                    src={heartIcon}
+                    alt="heartIcon"
+                  />
+                  <img
+                    className="icon-cursor"
+                    src={scaleIcon}
+                    alt="scaleIcon"
+                  />
                 </div>
               </div>
             </div>
@@ -940,41 +1384,74 @@ const MainPage = () => {
               />
             </a>
             <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
-            <p className="leading-normal opacity-60">Leather White Trainers</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through">
-                  $ 60.00
-                </p>
+              <p className="leading-normal opacity-60">
+                Leather White Trainers
+              </p>
+              <div className="flex-balance justify-between">
+                <div className="sm:flex-balance flex flex-col space-x-1">
+                  <p className="font-bold leading-normal">$ 30.00</p>
+                </div>
+                <div className="flex-balance space-x-[1px]">
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={grayStar} alt="grayStar" />
+                </div>
               </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
-              </div>
-            </div>
             </div>
             <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
               <div className="grid gap-3">
                 <div className="sm:flex-balance sm:space-x-2 hidden">
-                  <img className="w-10 h-10" src={productImage2} alt="productImage2" />
-                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
-                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
-                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage2}
+                    alt="productImage2"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage3}
+                    alt="productImage3"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage4}
+                    alt="productImage4"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage5}
+                    alt="productImage5"
+                  />
                 </div>
                 <div className="flex-balance space-x-2">
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    XS
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    S
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    M
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    L
+                  </small>
                 </div>
                 <div className="flex-balance justify-between">
-                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
-                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
-                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">
+                    Add to cart
+                  </button>
+                  <img
+                    className="icon-cursor"
+                    src={heartIcon}
+                    alt="heartIcon"
+                  />
+                  <img
+                    className="icon-cursor"
+                    src={scaleIcon}
+                    alt="scaleIcon"
+                  />
                 </div>
               </div>
             </div>
@@ -988,41 +1465,74 @@ const MainPage = () => {
               />
             </a>
             <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
-            <p className="leading-normal opacity-60">Leather White Trainers</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through">
-                  $ 60.00
-                </p>
+              <p className="leading-normal opacity-60">
+                Leather White Trainers
+              </p>
+              <div className="flex-balance justify-between">
+                <div className="sm:flex-balance flex flex-col space-x-1">
+                  <p className="font-bold leading-normal">$ 30.00</p>
+                </div>
+                <div className="flex-balance space-x-[1px]">
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={grayStar} alt="grayStar" />
+                </div>
               </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
-              </div>
-            </div>
             </div>
             <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
               <div className="grid gap-3">
                 <div className="sm:flex-balance sm:space-x-2 hidden">
-                  <img className="w-10 h-10" src={productImage2} alt="productImage2" />
-                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
-                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
-                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage2}
+                    alt="productImage2"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage3}
+                    alt="productImage3"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage4}
+                    alt="productImage4"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage5}
+                    alt="productImage5"
+                  />
                 </div>
                 <div className="flex-balance space-x-2">
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    XS
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    S
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    M
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    L
+                  </small>
                 </div>
                 <div className="flex-balance justify-between">
-                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
-                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
-                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">
+                    Add to cart
+                  </button>
+                  <img
+                    className="icon-cursor"
+                    src={heartIcon}
+                    alt="heartIcon"
+                  />
+                  <img
+                    className="icon-cursor"
+                    src={scaleIcon}
+                    alt="scaleIcon"
+                  />
                 </div>
               </div>
             </div>
@@ -1036,41 +1546,74 @@ const MainPage = () => {
               />
             </a>
             <div className="grid gap-3 bg-white absolute transition-all duration-300 sm:group-hover:bottom-[110px] group-hover:bottom-2 group-hover:mb-4 sm:-bottom-14 -bottom-24  pt-3 w-full">
-            <p className="leading-normal opacity-60">Leather White Trainers</p>
-            <div className="flex-balance justify-between">
-              <div className="sm:flex-balance flex flex-col space-x-1">
-                <p className="font-bold leading-normal">$ 30.00</p>
-                <p className="text-xs font-bold opacity-40 line-through">
-                  $ 60.00
-                </p>
+              <p className="leading-normal opacity-60">
+                Leather White Trainers
+              </p>
+              <div className="flex-balance justify-between">
+                <div className="sm:flex-balance flex flex-col space-x-1">
+                  <p className="font-bold leading-normal">$ 30.00</p>
+                </div>
+                <div className="flex-balance space-x-[1px]">
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={yellowStar} alt="yellowStar" />
+                  <img className="icon-sm" src={grayStar} alt="grayStar" />
+                </div>
               </div>
-              <div className="flex-balance space-x-[1px]">
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={yellowStar} alt="yellowStar" />
-                <img className="icon-sm" src={grayStar} alt="grayStar" />
-              </div>
-            </div>
             </div>
             <div className="group-hover:grid group-hover:opacity-100 group-hover:translate-y-[152px] transition duration-300 gap-3 absolute -translate-y-0 bg-white w-full pt-4 z-10 opacity-0">
               <div className="grid gap-3">
                 <div className="sm:flex-balance sm:space-x-2 hidden">
-                  <img className="w-10 h-10" src={productImage2} alt="productImage2" />
-                  <img className="w-10 h-10" src={productImage3} alt="productImage3" />
-                  <img className="w-10 h-10" src={productImage4} alt="productImage4" />
-                  <img className="w-10 h-10" src={productImage5} alt="productImage5" />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage2}
+                    alt="productImage2"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage3}
+                    alt="productImage3"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage4}
+                    alt="productImage4"
+                  />
+                  <img
+                    className="w-10 h-10"
+                    src={productImage5}
+                    alt="productImage5"
+                  />
                 </div>
                 <div className="flex-balance space-x-2">
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">XS</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">S</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">M</small>
-                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">L</small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    XS
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    S
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    M
+                  </small>
+                  <small className="text-[10px] font-semibold opacity-70 w-6 h-6 bg-primary-lightGray flex-balance justify-center">
+                    L
+                  </small>
                 </div>
                 <div className="flex-balance justify-between">
-                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">Add to cart</button>
-                  <img className="icon-cursor" src={heartIcon} alt="heartIcon" />
-                  <img className="icon-cursor" src={scaleIcon} alt="scaleIcon" />
+                  <button className="btn btn-xs btn-black sm:btn-md sm:text-[13px]">
+                    Add to cart
+                  </button>
+                  <img
+                    className="icon-cursor"
+                    src={heartIcon}
+                    alt="heartIcon"
+                  />
+                  <img
+                    className="icon-cursor"
+                    src={scaleIcon}
+                    alt="scaleIcon"
+                  />
                 </div>
               </div>
             </div>
@@ -1131,6 +1674,61 @@ const MainPage = () => {
             src={sectionImage3}
             alt="sectionImage3"
           />
+        </div>
+      </section>
+      <section className="px-content pb-section">
+        <div className="flex-balance justify-between mb-12">
+          <h3 className="leading-normal">Latest From Blog</h3>
+          <a
+            href="#"
+            className="text-xs font-medium uppercase tracking-[0.72px] opacity-60"
+          >
+            See all
+          </a>
+        </div>
+        <div className="blogs-deck">
+          <article className="blog-deck group">
+            <img className="sm:w-[350px] w-72" src={articleImage1} alt="articleImage1" />
+            <div className="bg-white py-6 px-4 sm:w-80 w-60 sm:h-[117px] h-[165px] group-hover:h-64 overflow-hidden transition-all duration-300">
+              <h5 className="mb-3">The Easiest Way to Break</h5>
+              <p>
+                But I must explain to you how all this mistaken idea of
+                denouncing pleas and praising pain was bor
+              </p>
+              <div className="flex-balance justify-between mt-6">
+                <p className="opacity-60">April 6, 2032</p>
+                <h6 className="leading-normal cursor-pointer">Read More</h6>
+              </div>
+            </div>
+          </article>
+          <article className="blog-deck group">
+            <img className="sm:w-[350px] w-72" src={articleImage2} alt="articleImage1" />
+            <div className="bg-white py-6 px-4 sm:w-80 w-60 sm:h-[117px] h-[165px] group-hover:h-64 overflow-hidden transition-all duration-300">
+              <h5 className="mb-3">Wedding Season</h5>
+              <p>
+                But I must explain to you how all this mistaken idea of
+                denouncing pleas and praising pain was bor
+              </p>
+              <div className="flex-balance justify-between mt-6">
+                <p className="opacity-60">April 6, 2032</p>
+                <h6 className="leading-normal cursor-pointer">Read More</h6>
+              </div>
+            </div>
+          </article>
+          <article className="blog-deck group">
+            <img className="sm:w-[350px] w-72" src={articleImage3} alt="articleImage1" />
+            <div className="bg-white py-6 px-4 sm:w-80 w-60 sm:h-[117px] h-[165px] group-hover:h-64 overflow-hidden transition-all duration-300">
+              <h5 className="mb-3">Recent Favorites On Repeat</h5>
+              <p>
+                But I must explain to you how all this mistaken idea of
+                denouncing pleas and praising pain was bor
+              </p>
+              <div className="flex-balance justify-between mt-6">
+                <p className="opacity-60">April 6, 2032</p>
+                <h6 className="leading-normal cursor-pointer">Read More</h6>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
     </main>

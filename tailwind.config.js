@@ -30,8 +30,8 @@ export default {
         'bannerbg3-h' : "url('/src/assets/images/banner bg/bannerbg3v2.png')",
         'bannerbg4' : "url('/src/assets/images/banner bg/bannerbg4.jpg')",
         'bannerbg4-h' : "url('/src/assets/images/banner bg/bannerbg4v2.png')",
-        'sectionImage1' : "url('/src/assets/images/section-image1.jpg')",
-        'sectionImage2' : "url('/src/assets/images/section-image2.jpg')",
+        'sectionImage1' : "url('/src/assets/images/section images/section-image1.jpg')",
+        'sectionImage2' : "url('/src/assets/images/section images/section-image2.jpg')",
       }
     },
   },

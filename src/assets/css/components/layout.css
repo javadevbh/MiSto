@@ -14,4 +14,12 @@
     .card-deck {
         @apply grid gap-3 shrink-0 sm:w-fit w-40
     }
+
+    .blogs-deck {
+        @apply flex sm:justify-between sm:flex-wrap overflow-x-scroll sm:overflow-x-hidden xl:gap-0 sm:gap-4 gap-8;
+    }
+
+    .blog-deck {
+        @apply flex flex-col items-center -space-y-20 w-fit shrink-0;
+    }
 }
