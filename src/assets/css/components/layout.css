@@ -16,7 +16,7 @@
     }
 
     .blogs-deck {
-        @apply flex sm:justify-between sm:flex-wrap overflow-x-scroll sm:overflow-x-hidden xl:gap-0 sm:gap-4 gap-8;
+        @apply flex sm:justify-between sm:flex-wrap overflow-x-scroll sm:overflow-x-hidden xl:gap-8 sm:gap-4 gap-8;
     }
 
     .blog-deck {
