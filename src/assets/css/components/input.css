@@ -1,19 +1,58 @@
 @layer components {
-    .input {
-        @apply w-full outline-none
-    }
-    .input-md {
-        @apply bg-primary-lightGray p-4;
-    }
-    .input-lg {
-        @apply bg-[rgba(255,255,255,0.2)] px-4 py-2 text-white
-    }
-    .hidden-appearance {
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-    }
-    .input-label {
-        @apply text-sm leading-[22px] tracking-[0.84px] uppercase font-semibold;
-    }
+  .input {
+    @apply w-full outline-none;
+  }
+  .input-md {
+    @apply bg-primary-lightGray p-4;
+  }
+  .input-lg {
+    @apply bg-[rgba(255,255,255,0.2)] px-4 py-2 text-white;
+  }
+
+  /*--- Customize input ---*/
+
+  .hidden-appearance {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  /*--- Customize input ---*/
+
+  .input-label {
+    @apply text-sm leading-[22px] tracking-[0.84px] uppercase font-semibold;
+  }
+
+  /*--- Customize checkbox ---*/
+  
+  .custom-checkbox {
+    @apply inline-block relative pl-7 cursor-pointer h-[20px];
+  }
+
+  .custom-checkbox input {
+    @apply hidden
+  }
+
+  .custom-checkbox .checkmark {
+    @apply absolute top-0 left-0 w-[18px] h-[18px] border border-[#00000066] bg-white;
+  }
+
+  
+  .custom-checkbox input:checked + .checkmark:after {
+    content: "";
+    @apply absolute left-[6px] top-[2px] w-[5px] h-[10px] border-primary-black rotate-45 ;
+    border-width: 0 2px 2px 0;
+  }
+
+  
+  .custom-checkbox label {
+    @apply ml-[10px];
+  }
+
+  
+  .custom-checkbox input:checked + .checkmark {
+   @apply border-primary-black;
+  }
+
+   /*--- Customize checkbox ---*/
 }

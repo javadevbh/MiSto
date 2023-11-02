@@ -242,11 +242,11 @@ const MainPage = () => {
           </ul>
           <div className="relative inline-block lg:hidden">
             <select className="input input-md hidden-appearance ">
-              <option value="all-categories">New Arrivals</option>
-              <option value="all-categories">Specials</option>
-              <option value="all-categories">Bestsellers</option>
-              <option value="all-categories">Most Viewed</option>
-              <option value="all-categories">Featured Products</option>
+              <option value="New Arrivals">New Arrivals</option>
+              <option value="Specials">Specials</option>
+              <option value="Bestsellers">Bestsellers</option>
+              <option value="Most Viewed">Most Viewed</option>
+              <option value="Featured Products">Featured Products</option>
             </select>
             <img
               className="-rotate-90 absolute top-4 right-3 w-6 pointer-events-none"
@@ -950,11 +950,11 @@ const MainPage = () => {
           </ul>
           <div className="relative inline-block lg:hidden">
             <select className="input input-md hidden-appearance ">
-              <option value="all-categories">New Arrivals</option>
-              <option value="all-categories">Specials</option>
-              <option value="all-categories">Bestsellers</option>
-              <option value="all-categories">Most Viewed</option>
-              <option value="all-categories">Featured Products</option>
+              <option value="New Arrivals">New Arrivals</option>
+              <option value="Specials">Specials</option>
+              <option value="Bestsellers">Bestsellers</option>
+              <option value="Most Viewed">Most Viewed</option>
+              <option value="Featured Products">Featured Products</option>
             </select>
             <img
               className="-rotate-90 absolute top-4 right-3 w-6 pointer-events-none"

@@ -51,4 +51,8 @@
     @apply relative before:content-['-50%'] before:bg-primary-pink before:absolute before:top-0 before:left-0 before:text-white before:text-xs before:font-bold before:p-2;
   }
 
+  .open-filter {
+    @apply !h-[312px] !opacity-100 py-6
+  }
+
 }
