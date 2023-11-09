@@ -1,5 +1,8 @@
 import React from "react";
 
+//React Router Dom
+import { Link } from "react-router-dom";
+
 //Images
 import articleImage1 from "../assets/images/article images/article-image1.jpg";
 import articleImage2 from "../assets/images/article images/article-image2.jpg";
@@ -10,12 +13,12 @@ const Blogs = () => {
     <section className="mt-content px-content pb-section">
       <div className="flex-balance justify-between mb-12">
         <h3 className="leading-normal">Blogs</h3>
-        <a
-          href="#"
+        <Link
+          to="/"
           className="text-xs font-medium uppercase tracking-[0.72px] opacity-60"
         >
           Back to the main page
-        </a>
+        </Link>
       </div>
       <div className="blogs-deck">
         <article className="blog-deck group">

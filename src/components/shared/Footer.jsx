@@ -1,5 +1,8 @@
 import React from "react";
 
+//React Router Dom
+import { Link } from "react-router-dom";
+
 //Icons
 import locationIcon from "../../assets/icons/location-marker 1.svg";
 import phoneIcon from "../../assets/icons/phone 1.svg";
@@ -22,7 +25,7 @@ import brand7 from "../../assets/images/brands logo/american-express_x42.jpg";
 const Footer = () => {
   return (
     <footer>
-      <div className="px-content py-3 bg-primary-black text-white md:flex-balance md:flex-row md:space-y-0 md:justify-between flex space-y-2 flex-col items-center">
+      <div id="contact_us" className="px-content py-3 bg-primary-black text-white md:flex-balance md:flex-row md:space-y-0 md:justify-between flex space-y-2 flex-col items-center">
         <h6>Be in touch with us:</h6>
         <div className="flex-balance space-x-3">
           <input className="input input-lg md:w-[400px] w-52" placeholder="Enter your email" type="email" />
@@ -47,8 +50,8 @@ const Footer = () => {
         <div className="grid gap-1 sm:order-1 order-1">
             <h6 className="leading-normal">Categories</h6>
             <div className="grid gap-[2px]">
-                <a className="link-sm" href="#">Men</a>
-                <a className="link-sm" href="#">Women</a>
+                <Link className="link-sm" to="/menpage">Men</Link>
+                <Link className="link-sm" to="/womenpage">Women</Link>
                 <a className="link-sm" href="#">Accessories</a>
                 <a className="link-sm" href="#">Beauty</a>
             </div>
@@ -56,9 +59,9 @@ const Footer = () => {
         <div className="grid gap-1 sm:order-2 order-3">
             <h6 className="leading-normal">Information</h6>
             <div className="grid gap-[2px]">
-                <a className="link-sm" href="#">About Us</a>
-                <a className="link-sm" href="#">Contact Us</a>
-                <a className="link-sm" href="#">Blog</a>
+                <Link target="_blank" className="link-sm" to="https://github.com/javadevbh/">About Us</Link>
+                <Link className="link-sm" to="mailto:javadev14bh@gmail.com">Contact Us</Link>
+                <Link className="link-sm" to="/blogs">Blog</Link>
                 <a className="link-sm" href="#">FAQs</a>
             </div>
         </div>

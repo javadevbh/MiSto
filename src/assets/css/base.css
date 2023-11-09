@@ -1,6 +1,7 @@
 @layer base {
   html {
     @apply font-spartan text-sm font-normal text-primary-black;
+    scroll-behavior: smooth;
   }
   h1,
   h2,

@@ -1,5 +1,8 @@
 import React, { useState, useRef } from "react";
 
+//React Router Dom
+import { Link } from "react-router-dom";
+
 //Icons
 import logo from "../../assets/icons/logo.svg";
 import searchIcon from "../../assets/icons/search 1.svg";
@@ -19,6 +22,7 @@ import plusIcon from "../../assets/icons/plus-sm 1.svg";
 import minusIcon from "../../assets/icons/minus-sm 1.svg";
 import trashIcon from "../../assets/icons/trash 1.svg";
 import testImage from "../../assets/images/Rectangle 1.jpg";
+import testImage2 from "../../assets/images/Rectangle 2.jpg";
 
 const Navbar = () => {
   const navbar = useRef();
@@ -122,24 +126,24 @@ const Navbar = () => {
         className="px-content py-6 flex-balance justify-between border-b border-primary-lightGray bg-white fixed w-full z-50"
       >
         <div>
-          <a href="#">
+          <Link to="/">
             <img src={logo} alt="logo" />
-          </a>
+          </Link>
         </div>
         <div className="hidden lg:block">
           <ul className="flex-balance space-x-10">
             <li className="group" onMouseEnter={navListHandler}>
-              <a className="link-hover" href="#">
+              <Link className="link-hover" target="_blank" to="https://github.com/javadevbh/">
                 About Us
-              </a>
+              </Link>
               <div className="hidden group-hover:flex justify-center">
                 <div className="absolute top-[68px] border-l-[10px] border-l-[transparent] border-r-[10px] border-r-[transparent]  border-b-[6.6px] border-b-primary-black"></div>
               </div>
             </li>
             <li className="" onMouseEnter={womenListHandler}>
-              <a className="link-hover" href="#">
+              <Link className="link-hover" to="/womenpage">
                 Women
-              </a>
+              </Link>
               {womenIsHovered ? (
                 <div className="show-element flex justify-center">
                   <div className="absolute top-[68px] border-l-[10px] border-l-[transparent] border-r-[10px] border-r-[transparent]  border-b-[6.6px] border-b-primary-black"></div>
@@ -151,9 +155,9 @@ const Navbar = () => {
               )}
             </li>
             <li onMouseEnter={menListHandler}>
-              <a className="link-hover" href="#">
+              <Link className="link-hover" to="/menpage">
                 Men
-              </a>
+              </Link>
               {menIsHovered ? (
                 <div className="show-element flex justify-center">
                   <div className="absolute top-[68px] border-l-[10px] border-l-[transparent] border-r-[10px] border-r-[transparent]  border-b-[6.6px] border-b-primary-black"></div>
@@ -181,15 +185,15 @@ const Navbar = () => {
               </div>
             </li>
             <li className="group" onMouseEnter={navListHandler}>
-              <a className="link-hover" href="#">
+              <Link className="link-hover" to="/blogs">
                 Blog
-              </a>
+              </Link>
               <div className="hidden group-hover:flex justify-center">
                 <div className="absolute top-[68px] border-l-[10px] border-l-[transparent] border-r-[10px] border-r-[transparent]  border-b-[6.6px] border-b-primary-black"></div>
               </div>
             </li>
             <li className="group" onMouseEnter={navListHandler}>
-              <a className="link-hover" href="#">
+              <a className="link-hover" href="#contact_us">
                 Contact
               </a>
               <div className="hidden group-hover:flex justify-center">
@@ -268,25 +272,25 @@ const Navbar = () => {
             <h5 className="mb-3">Bottoms</h5>
             <div className="grid gap-1">
               <a href="#" className="link-md">
-                Awesome
+                Jeans
               </a>
               <a href="#" className="link-md">
-                Beachwear
+                Lacoste
               </a>
               <a href="#" className="link-md">
-                Beige
+                Levi's
               </a>
               <a href="#" className="link-md">
-                Cool New
+                Model
               </a>
               <a href="#" className="link-md">
-                Dress
+                Nice Featured
               </a>
               <a href="#" className="link-md">
-                Gap
+                Polo
               </a>
               <a href="#" className="link-md">
-                Guess
+                Pullover
               </a>
             </div>
           </div>
@@ -294,25 +298,25 @@ const Navbar = () => {
             <h5 className="mb-3">Accessories</h5>
             <div className="grid gap-1">
               <a href="#" className="link-md">
-                Awesome
+                Scarf Sale 13%
               </a>
               <a href="#" className="link-md">
-                Beachwear
+                Shirt
               </a>
               <a href="#" className="link-md">
-                Beige
+                Shoes
               </a>
               <a href="#" className="link-md">
-                Cool New
+                Shorts
               </a>
               <a href="#" className="link-md">
-                Dress
+                Summer
               </a>
               <a href="#" className="link-md">
-                Gap
+                Sunglasses
               </a>
               <a href="#" className="link-md">
-                Guess
+                Vintage
               </a>
             </div>
           </div>
@@ -378,7 +382,7 @@ const Navbar = () => {
           onMouseLeave={() => setMenIsHovered(false)}
           className="show-element flex justify-between px-content py-8 w-full border-t-2 border-primary-black absolute top-28 bg-white z-40"
         >
-          <div className="flex flex-col">
+         <div className="flex flex-col">
             <h5 className="mb-3">Tops</h5>
             <div className="grid gap-1">
               <a href="#" className="link-md">
@@ -408,25 +412,25 @@ const Navbar = () => {
             <h5 className="mb-3">Bottoms</h5>
             <div className="grid gap-1">
               <a href="#" className="link-md">
-                Awesome
+                Jeans
               </a>
               <a href="#" className="link-md">
-                Beachwear
+                Lacoste
               </a>
               <a href="#" className="link-md">
-                Beige
+                Levi's
               </a>
               <a href="#" className="link-md">
-                Cool New
+                Model
               </a>
               <a href="#" className="link-md">
-                Dress
+                Nice Featured
               </a>
               <a href="#" className="link-md">
-                Gap
+                Polo
               </a>
               <a href="#" className="link-md">
-                Guess
+                Pullover
               </a>
             </div>
           </div>
@@ -434,25 +438,25 @@ const Navbar = () => {
             <h5 className="mb-3">Accessories</h5>
             <div className="grid gap-1">
               <a href="#" className="link-md">
-                Awesome
+                Scarf Sale 13%
               </a>
               <a href="#" className="link-md">
-                Beachwear
+                Shirt
               </a>
               <a href="#" className="link-md">
-                Beige
+                Shoes
               </a>
               <a href="#" className="link-md">
-                Cool New
+                Shorts
               </a>
               <a href="#" className="link-md">
-                Dress
+                Summer
               </a>
               <a href="#" className="link-md">
-                Gap
+                Sunglasses
               </a>
               <a href="#" className="link-md">
-                Guess
+                Vintage
               </a>
             </div>
           </div>
@@ -477,8 +481,8 @@ const Navbar = () => {
                 <a href="#">
                   <img
                     className="w-44 h-[199px]"
-                    src={testImage}
-                    alt="testImage"
+                    src={testImage2}
+                    alt="testImage2"
                   />
                 </a>
                 <small className="opacity-60">Women's tracksuit Q109</small>
@@ -488,8 +492,8 @@ const Navbar = () => {
                 <a href="#">
                   <img
                     className="w-44 h-[199px]"
-                    src={testImage}
-                    alt="testImage"
+                    src={testImage2}
+                    alt="testImage2"
                   />
                 </a>
                 <small className="opacity-60">Women's tracksuit Q109</small>
@@ -499,8 +503,8 @@ const Navbar = () => {
                 <a href="#">
                   <img
                     className="w-44 h-[199px]"
-                    src={testImage}
-                    alt="testImage"
+                    src={testImage2}
+                    alt="testImage2"
                   />
                 </a>
                 <small className="opacity-60">Women's tracksuit Q109</small>
@@ -528,19 +532,19 @@ const Navbar = () => {
         <div className="p-6 grid gap-12">
           <ul className="flex flex-col space-y-8">
             <li>
-              <a className="link-hover" href="#">
+              <Link target="_blank" className="link-hover" to="https://github.com/javadevbh/">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="link-hover" href="#">
+              <Link className="link-hover" to="/womenpage">
                 Women
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="link-hover" href="#">
+              <Link className="link-hover" to="/menpage">
                 Men
-              </a>
+              </Link>
             </li>
             <li>
               <a className="link-hover" href="#">
@@ -553,12 +557,12 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a className="link-hover" href="#">
+              <Link className="link-hover" to="/blogs">
                 Blog
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="link-hover" href="#">
+              <a className="link-hover" href="#contact_us">
                 Contact
               </a>
             </li>
@@ -622,48 +626,48 @@ const Navbar = () => {
             <h6 className="my-6">Need some inspiration?</h6>
             <div className="grid gap-6 lg:h-[460px] h-[380px] overflow-y-scroll">
               {/*--- products ---*/}
-              <div className="flex w-full space-x-4 cursor-pointer">
+              <Link to="/1" className="flex w-full space-x-4 cursor-pointer h-fit">
                 <img className="img-sm" src={testImage} alt="testImage" />
                 <div className="flex flex-col space-y-1">
                   <p className="opacity-60">Women's tracksuit Q109</p>
                   <p className="font-bold">$379.99</p>
                 </div>
-              </div>
-              <div className="flex w-full space-x-4 cursor-pointer">
+              </Link>
+              <Link to="/1" className="flex w-full space-x-4 cursor-pointer h-fit">
                 <img className="img-sm" src={testImage} alt="testImage" />
                 <div className="flex flex-col space-y-1">
                   <p className="opacity-60">Women's tracksuit Q109</p>
                   <p className="font-bold">$379.99</p>
                 </div>
-              </div>
-              <div className="flex w-full space-x-4 cursor-pointer">
+              </Link>
+              <Link to="/1" className="flex w-full space-x-4 cursor-pointer h-fit">
                 <img className="img-sm" src={testImage} alt="testImage" />
                 <div className="flex flex-col space-y-1">
                   <p className="opacity-60">Women's tracksuit Q109</p>
                   <p className="font-bold">$379.99</p>
                 </div>
-              </div>
-              <div className="flex w-full space-x-4 cursor-pointer">
+              </Link>
+              <Link to="/1" className="flex w-full space-x-4 cursor-pointer h-fit">
                 <img className="img-sm" src={testImage} alt="testImage" />
                 <div className="flex flex-col space-y-1">
                   <p className="opacity-60">Women's tracksuit Q109</p>
                   <p className="font-bold">$379.99</p>
                 </div>
-              </div>
-              <div className="flex w-full space-x-4 cursor-pointer">
+              </Link>
+              <Link to="/1" className="flex w-full space-x-4 cursor-pointer h-fit">
                 <img className="img-sm" src={testImage} alt="testImage" />
                 <div className="flex flex-col space-y-1">
                   <p className="opacity-60">Women's tracksuit Q109</p>
                   <p className="font-bold">$379.99</p>
                 </div>
-              </div>
-              <div className="flex w-full space-x-4 cursor-pointer">
+              </Link>
+              <Link to="/1" className="flex w-full space-x-4 cursor-pointer h-fit">
                 <img className="img-sm" src={testImage} alt="testImage" />
                 <div className="flex flex-col space-y-1">
                   <p className="opacity-60">Women's tracksuit Q109</p>
                   <p className="font-bold">$379.99</p>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -1052,7 +1056,11 @@ const Navbar = () => {
           <div className="flex flex-col space-y-3 lg:h-[460px] h-[380px] overflow-y-scroll">
             {/*--- products ---*/}
             <div className="flex w-full space-x-4 border-b-gray pb-3">
-              <img className="img-sm cursor-pointer" src={testImage} alt="testImage" />
+              <img
+                className="img-sm cursor-pointer"
+                src={testImage}
+                alt="testImage"
+              />
               <div className="flex flex-col justify-between w-full">
                 <div className="flex flex-col space-y-1">
                   <p className="opacity-60">Women's tracksuit Q109</p>
@@ -1060,17 +1068,33 @@ const Navbar = () => {
                 </div>
                 <div className="flex-balance justify-between w-full">
                   <div className="flex-balance w-20 justify-between bg-primary-lightGray p-1">
-                    <img className="w-[18px] icon-cursor hover:bg-primary-gray duration-300" src={minusIcon} alt="minusIcon" />
+                    <img
+                      className="w-[18px] icon-cursor hover:bg-primary-gray duration-300"
+                      src={minusIcon}
+                      alt="minusIcon"
+                    />
                     <p>1</p>
-                    <img className="w-[18px] icon-cursor hover:bg-primary-gray duration-300" src={plusIcon} alt="plusIcon" />
+                    <img
+                      className="w-[18px] icon-cursor hover:bg-primary-gray duration-300"
+                      src={plusIcon}
+                      alt="plusIcon"
+                    />
                   </div>
-                    <p className="font-bold">$379.99</p>
-                    <img className="icon-cursor" src={trashIcon} alt="trashIcon" />
+                  <p className="font-bold">$379.99</p>
+                  <img
+                    className="icon-cursor"
+                    src={trashIcon}
+                    alt="trashIcon"
+                  />
                 </div>
               </div>
             </div>
             <div className="flex w-full space-x-4 border-b-gray pb-3">
-              <img className="img-sm cursor-pointer" src={testImage} alt="testImage" />
+              <img
+                className="img-sm cursor-pointer"
+                src={testImage}
+                alt="testImage"
+              />
               <div className="flex flex-col justify-between w-full">
                 <div className="flex flex-col space-y-1">
                   <p className="opacity-60">Women's tracksuit Q109</p>
@@ -1078,17 +1102,33 @@ const Navbar = () => {
                 </div>
                 <div className="flex-balance justify-between w-full">
                   <div className="flex-balance w-20 justify-between bg-primary-lightGray p-1">
-                    <img className="w-[18px] icon-cursor hover:bg-primary-gray duration-300" src={minusIcon} alt="minusIcon" />
+                    <img
+                      className="w-[18px] icon-cursor hover:bg-primary-gray duration-300"
+                      src={minusIcon}
+                      alt="minusIcon"
+                    />
                     <p>1</p>
-                    <img className="w-[18px] icon-cursor hover:bg-primary-gray duration-300" src={plusIcon} alt="plusIcon" />
+                    <img
+                      className="w-[18px] icon-cursor hover:bg-primary-gray duration-300"
+                      src={plusIcon}
+                      alt="plusIcon"
+                    />
                   </div>
-                    <p className="font-bold">$379.99</p>
-                    <img className="icon-cursor" src={trashIcon} alt="trashIcon" />
+                  <p className="font-bold">$379.99</p>
+                  <img
+                    className="icon-cursor"
+                    src={trashIcon}
+                    alt="trashIcon"
+                  />
                 </div>
               </div>
             </div>
             <div className="flex w-full space-x-4 border-b-gray pb-3">
-              <img className="img-sm cursor-pointer" src={testImage} alt="testImage" />
+              <img
+                className="img-sm cursor-pointer"
+                src={testImage}
+                alt="testImage"
+              />
               <div className="flex flex-col justify-between w-full">
                 <div className="flex flex-col space-y-1">
                   <p className="opacity-60">Women's tracksuit Q109</p>
@@ -1096,17 +1136,33 @@ const Navbar = () => {
                 </div>
                 <div className="flex-balance justify-between w-full">
                   <div className="flex-balance w-20 justify-between bg-primary-lightGray p-1">
-                    <img className="w-[18px] icon-cursor hover:bg-primary-gray duration-300" src={minusIcon} alt="minusIcon" />
+                    <img
+                      className="w-[18px] icon-cursor hover:bg-primary-gray duration-300"
+                      src={minusIcon}
+                      alt="minusIcon"
+                    />
                     <p>1</p>
-                    <img className="w-[18px] icon-cursor hover:bg-primary-gray duration-300" src={plusIcon} alt="plusIcon" />
+                    <img
+                      className="w-[18px] icon-cursor hover:bg-primary-gray duration-300"
+                      src={plusIcon}
+                      alt="plusIcon"
+                    />
                   </div>
-                    <p className="font-bold">$379.99</p>
-                    <img className="icon-cursor" src={trashIcon} alt="trashIcon" />
+                  <p className="font-bold">$379.99</p>
+                  <img
+                    className="icon-cursor"
+                    src={trashIcon}
+                    alt="trashIcon"
+                  />
                 </div>
               </div>
             </div>
             <div className="flex w-full space-x-4 border-b-gray pb-3">
-              <img className="img-sm cursor-pointer" src={testImage} alt="testImage" />
+              <img
+                className="img-sm cursor-pointer"
+                src={testImage}
+                alt="testImage"
+              />
               <div className="flex flex-col justify-between w-full">
                 <div className="flex flex-col space-y-1">
                   <p className="opacity-60">Women's tracksuit Q109</p>
@@ -1114,17 +1170,33 @@ const Navbar = () => {
                 </div>
                 <div className="flex-balance justify-between w-full">
                   <div className="flex-balance w-20 justify-between bg-primary-lightGray p-1">
-                    <img className="w-[18px] icon-cursor hover:bg-primary-gray duration-300" src={minusIcon} alt="minusIcon" />
+                    <img
+                      className="w-[18px] icon-cursor hover:bg-primary-gray duration-300"
+                      src={minusIcon}
+                      alt="minusIcon"
+                    />
                     <p>1</p>
-                    <img className="w-[18px] icon-cursor hover:bg-primary-gray duration-300" src={plusIcon} alt="plusIcon" />
+                    <img
+                      className="w-[18px] icon-cursor hover:bg-primary-gray duration-300"
+                      src={plusIcon}
+                      alt="plusIcon"
+                    />
                   </div>
-                    <p className="font-bold">$379.99</p>
-                    <img className="icon-cursor" src={trashIcon} alt="trashIcon" />
+                  <p className="font-bold">$379.99</p>
+                  <img
+                    className="icon-cursor"
+                    src={trashIcon}
+                    alt="trashIcon"
+                  />
                 </div>
               </div>
             </div>
             <div className="flex w-full space-x-4 border-b-gray pb-3">
-              <img className="img-sm cursor-pointer" src={testImage} alt="testImage" />
+              <img
+                className="img-sm cursor-pointer"
+                src={testImage}
+                alt="testImage"
+              />
               <div className="flex flex-col justify-between w-full">
                 <div className="flex flex-col space-y-1">
                   <p className="opacity-60">Women's tracksuit Q109</p>
@@ -1132,17 +1204,33 @@ const Navbar = () => {
                 </div>
                 <div className="flex-balance justify-between w-full">
                   <div className="flex-balance w-20 justify-between bg-primary-lightGray p-1">
-                    <img className="w-[18px] icon-cursor hover:bg-primary-gray duration-300" src={minusIcon} alt="minusIcon" />
+                    <img
+                      className="w-[18px] icon-cursor hover:bg-primary-gray duration-300"
+                      src={minusIcon}
+                      alt="minusIcon"
+                    />
                     <p>1</p>
-                    <img className="w-[18px] icon-cursor hover:bg-primary-gray duration-300" src={plusIcon} alt="plusIcon" />
+                    <img
+                      className="w-[18px] icon-cursor hover:bg-primary-gray duration-300"
+                      src={plusIcon}
+                      alt="plusIcon"
+                    />
                   </div>
-                    <p className="font-bold">$379.99</p>
-                    <img className="icon-cursor" src={trashIcon} alt="trashIcon" />
+                  <p className="font-bold">$379.99</p>
+                  <img
+                    className="icon-cursor"
+                    src={trashIcon}
+                    alt="trashIcon"
+                  />
                 </div>
               </div>
             </div>
             <div className="flex w-full space-x-4 border-b-gray pb-3">
-              <img className="img-sm cursor-pointer" src={testImage} alt="testImage" />
+              <img
+                className="img-sm cursor-pointer"
+                src={testImage}
+                alt="testImage"
+              />
               <div className="flex flex-col justify-between w-full">
                 <div className="flex flex-col space-y-1">
                   <p className="opacity-60">Women's tracksuit Q109</p>
@@ -1150,12 +1238,24 @@ const Navbar = () => {
                 </div>
                 <div className="flex-balance justify-between w-full">
                   <div className="flex-balance w-20 justify-between bg-primary-lightGray p-1">
-                    <img className="w-[18px] icon-cursor hover:bg-primary-gray duration-300" src={minusIcon} alt="minusIcon" />
+                    <img
+                      className="w-[18px] icon-cursor hover:bg-primary-gray duration-300"
+                      src={minusIcon}
+                      alt="minusIcon"
+                    />
                     <p>1</p>
-                    <img className="w-[18px] icon-cursor hover:bg-primary-gray duration-300" src={plusIcon} alt="plusIcon" />
+                    <img
+                      className="w-[18px] icon-cursor hover:bg-primary-gray duration-300"
+                      src={plusIcon}
+                      alt="plusIcon"
+                    />
                   </div>
-                    <p className="font-bold">$379.99</p>
-                    <img className="icon-cursor" src={trashIcon} alt="trashIcon" />
+                  <p className="font-bold">$379.99</p>
+                  <img
+                    className="icon-cursor"
+                    src={trashIcon}
+                    alt="trashIcon"
+                  />
                 </div>
               </div>
             </div>
