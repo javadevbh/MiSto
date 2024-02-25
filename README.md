@@ -1,20 +1,19 @@
-# MiSto clothing store ( Work in progress )
-A complete clothing store site
+# MiSto clothing store
+A complete clothing store front-end
 ## [review online](https://javadbahrami-misto.netlify.app/)
 ---
 ## Important tip!
-* I'm working on this project and over time I will complete different parts of it, so what you see now is not the final version of the project!
+* Currently this is a static website because I couldn't find the right api for it
 
 ## tips
 * Shopping cart
-* Save login and sign up information
+* login and sign up page
 * Fully responsive for mobile, tablet, laptop and desktop
 * Coming soon!
 ---
 # web development technologies
 ## Front-End :
 * Reactjs
-* Redux(Redux-toolkit)
 * Tailwindcss
 ## Back-End : 
 * Coming soon!
