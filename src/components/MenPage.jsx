@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { useTitle } from "../hooks/useTitle";
 
 //Loader
 import Loading from "./shared/Loading";
@@ -21,6 +22,7 @@ import productImage4 from "../assets/images/Rectangle 5.jpg";
 import productImage5 from "../assets/images/Rectangle 6.jpg";
 
 const MenPage = () => {
+  useTitle("Men")
   const filterMenu = useRef();
   const openFilter = useRef();
   const closeFilter = useRef();

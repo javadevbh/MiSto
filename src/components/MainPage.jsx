@@ -1,4 +1,4 @@
-import React from "react";
+import { useTitle } from "../hooks/useTitle";
 
 //React Router Dom
 import { Link } from "react-router-dom";
@@ -33,6 +33,7 @@ import articleImage2 from "../assets/images/article images/article-image2.jpg";
 import articleImage3 from "../assets/images/article images/article-image3.jpg";
 
 const MainPage = () => {
+  useTitle("MiSto");
   return (
     <main className="mt-content">
       <section className="pb-8 border-b-lightgray">
@@ -91,7 +92,10 @@ const MainPage = () => {
                 <div className="swiper-button-next next bg-white opacity-60 rounded-full text-primary-black !w-10 !h-10 after:!text-lg after:content-['next']" />
               </Swiper>
             </div>
-            <Link to="/womenpage" className="bg-bannerbg2 cursor-pointer group flex-balance justify-center bg-no-repeat lg:row-[1/2] lg:col-[3/4]">
+            <Link
+              to="/womenpage"
+              className="bg-bannerbg2 cursor-pointer group flex-balance justify-center bg-no-repeat lg:row-[1/2] lg:col-[3/4]"
+            >
               <a
                 className="bg-white py-3 px-6 rounded-md transition-all duration-300 group-hover:py-5 group-hover:px-10"
                 href="#"
@@ -99,7 +103,10 @@ const MainPage = () => {
                 <h5>Women</h5>
               </a>
             </Link>
-            <Link to="menpage" className="bg-bannerbg3 cursor-pointer group flex-balance justify-center bg-no-repeat lg:row-[1/2] lg:col-[4/5]">
+            <Link
+              to="menpage"
+              className="bg-bannerbg3 cursor-pointer group flex-balance justify-center bg-no-repeat lg:row-[1/2] lg:col-[4/5]"
+            >
               <a
                 className="bg-white py-3 px-6 rounded-md transition-all duration-300 group-hover:py-5 group-hover:px-10"
                 href="#"
@@ -1685,7 +1692,11 @@ const MainPage = () => {
         </div>
         <div className="blogs-deck">
           <article className="blog-deck group">
-            <img className="sm:w-[350px] w-72" src={articleImage1} alt="articleImage1" />
+            <img
+              className="sm:w-[350px] w-72"
+              src={articleImage1}
+              alt="articleImage1"
+            />
             <div className="bg-white py-6 px-4 sm:w-80 w-60 sm:h-[117px] h-[165px] group-hover:h-64 overflow-hidden transition-all duration-300">
               <h5 className="mb-3">The Easiest Way to Break</h5>
               <p>
@@ -1699,7 +1710,11 @@ const MainPage = () => {
             </div>
           </article>
           <article className="blog-deck group">
-            <img className="sm:w-[350px] w-72" src={articleImage2} alt="articleImage1" />
+            <img
+              className="sm:w-[350px] w-72"
+              src={articleImage2}
+              alt="articleImage1"
+            />
             <div className="bg-white py-6 px-4 sm:w-80 w-60 sm:h-[117px] h-[165px] group-hover:h-64 overflow-hidden transition-all duration-300">
               <h5 className="mb-3">Wedding Season</h5>
               <p>
@@ -1713,7 +1728,11 @@ const MainPage = () => {
             </div>
           </article>
           <article className="blog-deck group">
-            <img className="sm:w-[350px] w-72" src={articleImage3} alt="articleImage1" />
+            <img
+              className="sm:w-[350px] w-72"
+              src={articleImage3}
+              alt="articleImage1"
+            />
             <div className="bg-white py-6 px-4 sm:w-80 w-60 sm:h-[117px] h-[165px] group-hover:h-64 overflow-hidden transition-all duration-300">
               <h5 className="mb-3">Recent Favorites On Repeat</h5>
               <p>

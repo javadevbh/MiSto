@@ -1,4 +1,4 @@
-import React from "react";
+import { useTitle } from "../hooks/useTitle";
 
 //React Router Dom
 import { Link } from "react-router-dom";
@@ -9,6 +9,7 @@ import articleImage2 from "../assets/images/article images/article-image2.jpg";
 import articleImage3 from "../assets/images/article images/article-image3.jpg";
 
 const Blogs = () => {
+  useTitle("Blogs");
   return (
     <section className="mt-content px-content pb-section">
       <div className="flex-balance justify-between mb-12">
