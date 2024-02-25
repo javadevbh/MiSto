@@ -1,3 +1,8 @@
+<div>
+  <img src="https://github.com/javadevbh/MiSto/assets/122552232/c47fd956-329f-4b97-bb46-ea65153f5297">
+</div>
+
+---
 # MiSto clothing store
 A complete clothing store front-end
 ## [review online](https://javadbahrami-misto.netlify.app/)
